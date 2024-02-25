@@ -1,0 +1,30 @@
+@import '@/styles/vars.scss';
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.elem {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.link {
+  font-size: 18px;
+  line-height: 26px;
+  color: #30475e;
+  text-decoration: none;
+
+  &:hover {
+    color: $active;
+  }
+}
+
+.btn {
+  width: 100%;
+}

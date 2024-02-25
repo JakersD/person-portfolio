@@ -1,89 +1,15 @@
-import { MainBlock } from '@/components';
+import { HeaderWidget } from '@/components/widgets/common';
+import styles from './page.module.scss';
+import { MainInfoWidget } from '@/components/widgets';
 
 export default function Home() {
   return (
-    <>
-      <MainBlock size='small'>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-      <MainBlock>
-        <h1>Привет МИР</h1>
-      </MainBlock>
-    </>
+    <div className={styles.wrapper}>
+      <HeaderWidget />
+      <main className={styles.main}>
+        <MainInfoWidget />
+        <footer></footer>
+      </main>
+    </div>
   );
 }

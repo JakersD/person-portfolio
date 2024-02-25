@@ -1,0 +1,23 @@
+@import '@/styles/vars.scss';
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: $tagline-light;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.img {
+  margin-right: 8px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: $active;
+}
