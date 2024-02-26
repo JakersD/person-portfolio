@@ -7,3 +7,9 @@ body {
   background-color: #e5e7e9;
   padding: 32px 40px;
 }
+
+@include ultra_sm {
+  body {
+    padding: 8px;
+  }
+}

@@ -26,7 +26,11 @@ const getNavList = () => [
   },
 ];
 
-export const Nav: React.FC = () => {
+interface IProps {
+  isModal?: boolean;
+}
+
+export const Nav: React.FC<IProps> = ({ isModal }) => {
   return (
     <>
       <ul className={styles.list}>

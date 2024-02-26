@@ -9,3 +9,12 @@
 .main {
   width: stretch;
 }
+
+@include lg {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+@include ultra_sm {
+}

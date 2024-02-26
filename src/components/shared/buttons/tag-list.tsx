@@ -3,11 +3,11 @@ import React from 'react';
 import styles from './tag-list.module.scss';
 import { Tag } from '@/components';
 
-import documentIcon from '@/../public/icons/document.svg';
-import behanceIcon from '@/../public/icons/behance.svg';
-import telegramIcon from '@/../public/icons/telegram.svg';
-import whatsAppIcon from '@/../public/icons/whatsapp.svg';
-import mailIcon from '@/../public/icons/mail.svg';
+import documentIcon from '@public/icons/document.svg';
+import behanceIcon from '@public/icons/behance.svg';
+import telegramIcon from '@public/icons/telegram.svg';
+import whatsAppIcon from '@public/icons/whatsapp.svg';
+import mailIcon from '@public/icons/mail.svg';
 import { getUniqueKey } from '@/utils';
 
 const getTagList = () => [

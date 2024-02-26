@@ -28,3 +28,17 @@
   letter-spacing: 0px;
   color: $gray;
 }
+
+.active {
+  display: block !important;
+}
+
+@include lg {
+  .logo {
+    margin: 0;
+  }
+
+  .job {
+    display: none;
+  }
+}

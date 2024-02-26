@@ -26,6 +26,13 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'My portfolio site',
+  icons: {
+    icon: [
+      {
+        url: '/icons/favicon.ico',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
