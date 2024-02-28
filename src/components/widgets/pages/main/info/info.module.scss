@@ -1,0 +1,29 @@
+@import '@/styles/vars.scss';
+
+.wrapper {
+  width: 706px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.text {
+  margin-bottom: 32px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@include md {
+  .wrapper {
+    width: auto;
+  }
+}
+
+@include sm {
+  .text {
+    margin-bottom: 24px;
+  }
+}

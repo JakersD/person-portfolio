@@ -1,6 +1,7 @@
 import React from 'react';
 import { EBtnTheme } from '..';
 import styles from './btn.module.scss';
+import { combineStyles } from '@/_data';
 
 interface IProps {
   children: string;
@@ -26,7 +27,7 @@ export const Btn: React.FC<IProps> = ({
   };
 
   return (
-    <button onClick={onClick} className={`${className} ${getTheme()}`}>
+    <button onClick={onClick} className={combineStyles([getTheme(), className])}>
       {children}
     </button>
   );

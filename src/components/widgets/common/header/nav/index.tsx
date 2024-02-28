@@ -1,7 +1,7 @@
 import { Btn } from '@/components';
 import React from 'react';
 import styles from './nav.module.scss';
-import { getUniqueKey } from '@/utils';
+import { getUniqueKey } from '@/_data';
 
 const getNavList = () => [
   {
@@ -26,11 +26,7 @@ const getNavList = () => [
   },
 ];
 
-interface IProps {
-  isModal?: boolean;
-}
-
-export const Nav: React.FC<IProps> = ({ isModal }) => {
+export const Nav: React.FC = () => {
   return (
     <>
       <ul className={styles.list}>

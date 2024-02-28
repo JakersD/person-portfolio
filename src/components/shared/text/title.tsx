@@ -1,8 +1,8 @@
-'use client';
-
 import React from 'react';
 import { ETitleSize } from '..';
-import { SH1, SH2, SH3, SH4, SH5, SH6 } from './title.styled';
+
+import styles from './title.module.scss';
+import { combineStyles } from '@/_data';
 
 interface IProps {
   size: ETitleSize;
@@ -14,17 +14,17 @@ export const Title: React.FC<IProps> = ({ size, children, className }) => {
   const renderTitle = (): JSX.Element => {
     switch (size) {
       case ETitleSize.H1:
-        return <SH1 className={className}>{children}</SH1>;
+        return <h1 className={combineStyles([styles.h1, className])}>{children}</h1>;
       case ETitleSize.H2:
-        return <SH2 className={className}>{children}</SH2>;
+        return <h2 className={combineStyles([styles.h2, className])}>{children}</h2>;
       case ETitleSize.H3:
-        return <SH3 className={className}>{children}</SH3>;
+        return <h3 className={combineStyles([styles.h3, className])}>{children}</h3>;
       case ETitleSize.H4:
-        return <SH4 className={className}>{children}</SH4>;
+        return <h4 className={combineStyles([styles.h4, className])}>{children}</h4>;
       case ETitleSize.H5:
-        return <SH5 className={className}>{children}</SH5>;
+        return <h5 className={combineStyles([styles.h5, className])}>{children}</h5>;
       case ETitleSize.H6:
-        return <SH6 className={className}>{children}</SH6>;
+        return <h6 className={combineStyles([styles.h6, className])}>{children}</h6>;
     }
   };
 

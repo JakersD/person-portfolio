@@ -1,14 +1,14 @@
-'use client';
-
 import React from 'react';
-import { SText } from './text.styled';
-import { ETextSize, ETextWeight } from '../model';
+import { ETextSize, ETextTheme, ETextWeight } from '../model';
+import styles from './text.module.scss';
+import { combineStyles } from '@/_data';
 
 interface IProps {
   children: string;
   className?: string;
   weight?: ETextWeight;
   size?: ETextSize;
+  theme?: ETextTheme;
 }
 
 export const Text: React.FC<IProps> = ({
@@ -16,10 +16,15 @@ export const Text: React.FC<IProps> = ({
   className,
   size = ETextSize.MD,
   weight = ETextWeight.NORMAL,
+  theme = ETextTheme.GENERAL,
 }) => {
+  const renderWeight = () => (weight === ETextWeight.BOLD ? styles.textWeightBold : undefined);
+
+  const renderSize = () => (size === ETextSize.MD ? styles.textMD : styles.textSM);
+
+  const renderTheme = () => (theme === ETextTheme.GENERAL ? styles.general : styles.second);
+
   return (
-    <SText className={className} size={size} weight={weight}>
-      {children}
-    </SText>
+    <p className={combineStyles([renderSize(), renderWeight(), renderTheme(), className])}>{children}</p>
   );
 };

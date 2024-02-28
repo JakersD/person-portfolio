@@ -11,10 +11,6 @@
   margin-right: 24px;
 }
 
-// .headerActive {
-//   box-shadow: 0px 8px 12px 0px rgba(48, 57, 70, 0.16);
-// }
-
 .modalLogo {
   display: flex;
   justify-content: space-between;
@@ -34,9 +30,11 @@
   }
 }
 
-@include ultra_sm {
+@include sm {
   .header {
     padding: 16px;
+    top: 10px;
+    margin-bottom: 16px;
   }
 
   .modalLogoActive {

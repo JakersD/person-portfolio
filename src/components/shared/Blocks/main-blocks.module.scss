@@ -5,6 +5,7 @@
   border: 1px solid #e2e8f5;
   border-radius: 24px;
   padding: 48px 32px;
+  margin-bottom: 24px;
 }
 
 .wrapperSmall {
@@ -12,4 +13,17 @@
   border: 1px solid #e2e8f5;
   border-radius: 24px;
   padding: 24px 24px;
+}
+
+@include md {
+  .wrapper {
+    padding: 32px 24px 20px 24px;
+    margin-bottom: 16px;
+  }
+}
+
+@include sm {
+  .wrapper {
+    padding: 24px 16px 8px 16px;
+  }
 }

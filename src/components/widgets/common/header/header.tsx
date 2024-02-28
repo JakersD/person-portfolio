@@ -6,8 +6,8 @@ import { Logo } from './logo';
 import { Nav } from './nav';
 
 import styles from './header.module.scss';
-import { useResize } from '@/hooks';
 import { BurgerBtn } from '@/components';
+import { useResize } from '@/_data';
 
 export const HeaderWidget: React.FC = () => {
   const [active, setActive] = useState(false);
@@ -23,7 +23,7 @@ export const HeaderWidget: React.FC = () => {
           <Logo isModal={active} />
           <BurgerBtn active={active} onClick={handleToggle} />
         </div>
-        {active && <Nav isModal />}
+        {active && <Nav />}
       </header>
     );
   }

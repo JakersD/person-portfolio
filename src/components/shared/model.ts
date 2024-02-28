@@ -8,6 +8,11 @@ export enum ETextSize {
   MD = 'MD',
 }
 
+export enum ETextTheme {
+  GENERAL = 'GENERAL',
+  SECOND = 'SECOND',
+}
+
 export enum ETitleSize {
   H1 = 'h1',
   H2 = 'h2',

@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './main-blocks.module.scss';
+import { combineStyles } from '@/_data';
 
 interface IProps {
-  children?: JSX.Element | JSX.Element[];
+  children?: React.ReactNode;
   className?: string;
 }
 
 export const MainBlock: React.FC<IProps> = ({ className, children }) => {
-  return <div className={`${className} ${styles.wrapper}`}>{children}</div>;
+  return <div className={combineStyles([styles.wrapper, className])}>{children}</div>;
 };

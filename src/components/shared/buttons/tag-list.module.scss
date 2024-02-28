@@ -1,6 +1,9 @@
+@import '@/styles/vars.scss';
+
 .list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -8,5 +11,18 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@include md {
+  .item {
+    margin-bottom: 12px;
+  }
+}
+
+@include sm {
+  .item {
+    margin-right: 16px;
+    margin-bottom: 16px;
   }
 }
