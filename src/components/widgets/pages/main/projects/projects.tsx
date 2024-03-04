@@ -6,7 +6,7 @@ import styles from './projects.module.scss';
 import Image from 'next/image';
 import { getProjectList } from '@/_data/config/core';
 
-export const MainProjectsWidget = () => {
+export const MainProjectsWidget: React.FC = () => {
   return (
     <MainBlock>
       <Title className={styles.title} size={ETitleSize.H2}>

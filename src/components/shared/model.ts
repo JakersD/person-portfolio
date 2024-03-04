@@ -26,3 +26,10 @@ export enum EBtnTheme {
   PRIMARY = 'PRIMARY',
   SECONDARY = 'SECONDARY',
 }
+
+export interface IItem {
+  dates: [string, string];
+  title: string;
+  subtitle: string;
+  text: string;
+}

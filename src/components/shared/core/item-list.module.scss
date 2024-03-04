@@ -1,0 +1,29 @@
+@import '@/styles/vars.scss';
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.date {
+  color: $gray;
+  white-space: nowrap;
+  margin-right: 45px;
+}
+
+.info {
+  max-width: 682px;
+}
+
+.title {
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+}

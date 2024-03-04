@@ -7,3 +7,4 @@ export * from './buttons/btn';
 export * from './buttons/tag';
 export * from './buttons/tag-list';
 export * from './buttons/burger';
+export * from './core/item-list';

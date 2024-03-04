@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Lato from 'next/font/local';
 
 import '@/styles/index.scss';
+import { HeaderWidget } from '@/components/widgets/common';
+import styles from './layout.module.scss';
 
 const lato = Lato({
   src: [
@@ -42,7 +44,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={lato.className}>{children}</body>
+      <body className={lato.className}>
+        <div className={styles.wrapper}>
+          <HeaderWidget />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

@@ -11,7 +11,7 @@
 
 .project {
   cursor: pointer;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 
   &:last-child {
     margin-bottom: 0;
@@ -21,16 +21,16 @@
 .img {
   width: 100%;
   object-fit: cover;
-  max-height: 320px;
+  max-height: 480px;
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .projectTitleBlock {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 8px;
+  // margin-bottom: 4px;
 }
 
 .icon {

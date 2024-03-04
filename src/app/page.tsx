@@ -1,16 +1,15 @@
 import { HeaderWidget } from '@/components/widgets/common';
 import styles from './page.module.scss';
-import { MainInfoWidget, MainProjectsWidget } from '@/components/widgets';
+import { MainExperienceWidget, MainInfoWidget, MainProjectsWidget } from '@/components/widgets';
+import { FooterWidget } from '@/components/widgets/common/footer/footer';
 
 export default function Home() {
   return (
-    <div className={styles.wrapper}>
-      <HeaderWidget />
-      <main className={styles.main}>
-        <MainInfoWidget />
-        <MainProjectsWidget />
-        <footer></footer>
-      </main>
-    </div>
+    <main className={styles.main}>
+      <MainInfoWidget />
+      <MainProjectsWidget />
+      <MainExperienceWidget />
+      <FooterWidget />
+    </main>
   );
 }

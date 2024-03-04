@@ -3,6 +3,5 @@ export interface IProject {
   title: string;
   role: string;
   imgSrc: string;
-  isOdd?: boolean;
   dates: [string, string];
 }

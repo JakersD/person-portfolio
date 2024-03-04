@@ -1,0 +1,51 @@
+@import '@/styles/vars.scss';
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  background-color: $active !important;
+}
+
+.imgWrapper {
+  margin-right: 24px;
+}
+
+.portfolioPhoto {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.title {
+  color: $white !important;
+  max-width: 600px;
+}
+
+.linkTitle {
+  color: $white !important;
+  margin-right: 12px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: flex-end;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemLink {
+  color: $white;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
