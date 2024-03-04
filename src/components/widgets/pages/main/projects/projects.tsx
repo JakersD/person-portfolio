@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import { ETextTheme, ETitleSize, MainBlock, Text, Title } from '@/components';
@@ -5,8 +7,11 @@ import { ETextTheme, ETitleSize, MainBlock, Text, Title } from '@/components';
 import styles from './projects.module.scss';
 import Image from 'next/image';
 import { getProjectList } from '@/_data/config/core';
+import { useResize } from '@/_data';
 
 export const MainProjectsWidget: React.FC = () => {
+  const width = useResize();
+
   return (
     <MainBlock>
       <Title className={styles.title} size={ETitleSize.H2}>
@@ -28,7 +33,14 @@ export const MainProjectsWidget: React.FC = () => {
                 height={40}
               />
             </div>
-            <Text theme={ETextTheme.SECOND}>{`${v.role} | ${v.dates[0]}-${v.dates[1]}`}</Text>
+            {width <= 860 ? (
+              <>
+                <Text theme={ETextTheme.SECOND}>{v.role}</Text>
+                <Text theme={ETextTheme.SECOND}>{`${v.dates[0]}-${v.dates[1]}`}</Text>
+              </>
+            ) : (
+              <Text theme={ETextTheme.SECOND}>{`${v.role} | ${v.dates[0]}-${v.dates[1]}`}</Text>
+            )}
           </div>
         ))}
       </div>

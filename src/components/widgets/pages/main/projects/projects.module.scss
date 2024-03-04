@@ -30,7 +30,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // margin-bottom: 4px;
 }
 
 .icon {
@@ -39,40 +38,26 @@
   padding: 8px;
 }
 
-// .projectWrapper {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   gap: 32px 24px;
-// }
+@include md {
+  .project {
+    margin-bottom: 32px;
+  }
 
-// .project {
-//   height: max-content;
-//   cursor: pointer;
-// }
+  .img {
+    max-height: 320px;
+  }
+}
 
-// .img {
-//   width: 100%;
-//   object-fit: cover;
-//   border-radius: 12px;
-//   margin-bottom: 20px;
-// }
+@include sm {
+  .project {
+    margin-bottom: 24px;
+  }
 
-// .projectTitleBlock {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
+  .title {
+    margin-bottom: 24px;
+  }
 
-// .icon {
-//   background-color: $tagline-light;
-//   border-radius: 12px;
-//   padding: 8px;
-// }
-
-// .full {
-//   width: 200%;
-// }
-
-// .projectTitle {
-//   margin-bottom: 8px;
-// }
+  .img {
+    margin-bottom: 12px;
+  }
+}

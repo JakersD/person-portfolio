@@ -12,6 +12,7 @@
 
 .date {
   color: $gray;
+  min-width: 114px;
   white-space: nowrap;
   margin-right: 45px;
 }
@@ -26,4 +27,43 @@
 
 .subtitle {
   margin-bottom: 16px;
+}
+
+// @media (max-width: 1326px) {
+//   .info {
+//     max-width: 562px;
+//   }
+// }
+
+@include lg {
+  .info {
+    max-width: 760px;
+  }
+}
+
+@include sm {
+  .item {
+    flex-direction: column;
+  }
+
+  .date {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-right: 0;
+    min-width: auto;
+  }
+
+  .info {
+    width: 100%;
+    max-width: none;
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    margin-bottom: 4px;
+  }
 }

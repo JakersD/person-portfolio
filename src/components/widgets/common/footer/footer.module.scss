@@ -49,3 +49,29 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@include sm {
+  .main {
+    flex-direction: column;
+  }
+
+  .imgWrapper {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    max-width: none;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .link {
+    flex-wrap: wrap;
+  }
+}
