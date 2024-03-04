@@ -4,8 +4,7 @@ import { ETextTheme, ETitleSize, MainBlock, Text, Title } from '@/components';
 
 import styles from './projects.module.scss';
 import Image from 'next/image';
-import { getProjectList } from './config';
-import { combineStyles } from '@/_data';
+import { getProjectList } from '@/_data/config/core';
 
 export const MainProjectsWidget = () => {
   return (
@@ -15,7 +14,7 @@ export const MainProjectsWidget = () => {
       </Title>
       <div className={styles.projectWrapper}>
         {getProjectList().map((v) => (
-          <div className={combineStyles([styles.project, v.isOdd ? styles.full : null])}>
+          <div className={styles.project}>
             <img className={styles.img} src={v.imgSrc} alt='Картинка' />
             <div className={styles.projectTitleBlock}>
               <Title className={styles.projectTitle} size={ETitleSize.H3}>
