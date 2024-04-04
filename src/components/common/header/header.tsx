@@ -6,8 +6,8 @@ import { Logo } from './logo';
 import { Nav } from './nav';
 
 import styles from './header.module.scss';
-import { BurgerBtn } from '@/components';
 import { useResize } from '@/_data';
+import { BurgerBtn } from '@/components/shared';
 
 export const HeaderWidget: React.FC = () => {
   const [active, setActive] = useState(false);

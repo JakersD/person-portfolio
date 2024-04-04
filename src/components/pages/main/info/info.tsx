@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { Title, MainBlock, ETitleSize, Text, TagList } from '@/components';
-
 import styles from './info.module.scss';
+import { ETitleSize, MainBlock, TagList, Text, Title } from '@/components/shared';
 
-export const MainInfoWidget: React.FC = () => {
+export const InfoWidget: React.FC = () => {
   return (
     <MainBlock>
       <div className={styles.wrapper}>

@@ -1,0 +1,47 @@
+@import '@/styles/vars.scss';
+
+.title {
+  margin-bottom: 16px;
+}
+
+.parent {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 24px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: $active;
+    margin-right: 8px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include sm {
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

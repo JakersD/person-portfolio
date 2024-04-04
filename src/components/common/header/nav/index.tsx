@@ -1,7 +1,7 @@
-import { Btn } from '@/components';
 import React from 'react';
 import styles from './nav.module.scss';
 import { getUniqueKey } from '@/_data';
+import { Btn } from '@/components/shared';
 
 const getNavList = () => [
   {

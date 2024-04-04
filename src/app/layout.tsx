@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Lato from 'next/font/local';
 
 import '@/styles/index.scss';
-import { HeaderWidget } from '@/components/widgets/common';
 import styles from './layout.module.scss';
+import { HeaderWidget } from '@/components/common';
 
 const lato = Lato({
   src: [

@@ -1,14 +1,21 @@
-import { HeaderWidget } from '@/components/widgets/common';
+import {
+  EducationWidget,
+  ExperienceWidget,
+  InfoWidget,
+  ProjectsWidget,
+  SkillsWidget,
+} from '@/components/pages';
 import styles from './page.module.scss';
-import { MainExperienceWidget, MainInfoWidget, MainProjectsWidget } from '@/components/widgets';
-import { FooterWidget } from '@/components/widgets/common/footer/footer';
+import { FooterWidget } from '@/components/common';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <MainInfoWidget />
-      <MainProjectsWidget />
-      <MainExperienceWidget />
+      <InfoWidget />
+      <ProjectsWidget />
+      <ExperienceWidget />
+      <SkillsWidget />
+      <EducationWidget />
       <FooterWidget />
     </main>
   );

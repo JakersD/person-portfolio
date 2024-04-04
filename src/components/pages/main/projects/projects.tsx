@@ -2,14 +2,13 @@
 
 import React from 'react';
 
-import { ETextTheme, ETitleSize, MainBlock, Text, Title } from '@/components';
-
 import styles from './projects.module.scss';
 import Image from 'next/image';
 import { getProjectList } from '@/_data/config/core';
 import { useResize } from '@/_data';
+import { ETextTheme, ETitleSize, MainBlock, Text, Title } from '@/components/shared';
 
-export const MainProjectsWidget: React.FC = () => {
+export const ProjectsWidget: React.FC = () => {
   const width = useResize();
 
   return (
