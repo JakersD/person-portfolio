@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 
 import { Logo } from './logo';
 import { Nav } from './nav';
-
-import styles from './header.module.scss';
 import { useResize } from '@/_data';
 import { BurgerBtn } from '@/components/shared';
+
+import styles from './header.module.scss';
 
 export const HeaderWidget: React.FC = () => {
   const [active, setActive] = useState(false);

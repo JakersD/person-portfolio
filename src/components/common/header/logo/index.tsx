@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import PortfolioPhoto from '@/../public/portfolio-photo.jpg';
+
 import styles from './logo.module.scss';
 
 interface IProps {

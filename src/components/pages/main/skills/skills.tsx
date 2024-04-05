@@ -1,5 +1,5 @@
-import { ETitleSize, MainBlock, Text, Title } from '@/components/shared';
 import React from 'react';
+import { ETitleSize, MainBlock, Text, Title } from '@/components/shared';
 
 import styles from './skills.module.scss';
 

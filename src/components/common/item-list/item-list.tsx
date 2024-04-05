@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { getUniqueKey } from '@/_data';
+import { ETextTheme, ETitleSize, IItem, Text, Title } from '@/components/shared';
 
 import styles from './item-list.module.scss';
-import { ETextTheme, ETitleSize, IItem, Text, Title } from '@/components/shared';
 
 interface IProps {
   items: IItem[];

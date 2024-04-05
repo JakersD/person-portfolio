@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
   EducationWidget,
   ExperienceWidget,
@@ -5,8 +7,9 @@ import {
   ProjectsWidget,
   SkillsWidget,
 } from '@/components/pages';
-import styles from './page.module.scss';
 import { FooterWidget } from '@/components/common';
+
+import styles from './page.module.scss';
 
 export default function Home() {
   return (

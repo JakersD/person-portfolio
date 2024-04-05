@@ -1,12 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
+import { ETitleSize, MainBlock, Text, Title } from '@/components/shared';
 import PortfolioPhoto from '@/../public/portfolio-photo.jpg';
 import NavigationIcon from '@/../public/icons/navigation.svg';
 
 import styles from './footer.module.scss';
-import Image from 'next/image';
-import Link from 'next/link';
-import { ETitleSize, MainBlock, Text, Title } from '@/components/shared';
 
 export const FooterWidget: React.FC = () => {
   return (

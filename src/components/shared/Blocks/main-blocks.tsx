@@ -1,6 +1,8 @@
 import React from 'react';
-import styles from './main-blocks.module.scss';
+
 import { combineStyles } from '@/_data';
+
+import styles from './main-blocks.module.scss';
 
 interface IProps {
   children?: React.ReactNode;

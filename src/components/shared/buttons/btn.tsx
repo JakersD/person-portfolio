@@ -1,7 +1,9 @@
 import React from 'react';
+
 import { EBtnTheme } from '..';
-import styles from './btn.module.scss';
 import { combineStyles } from '@/_data';
+
+import styles from './btn.module.scss';
 
 interface IProps {
   children: string;

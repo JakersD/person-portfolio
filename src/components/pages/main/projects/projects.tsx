@@ -1,15 +1,22 @@
 'use client';
 
 import React from 'react';
-
-import styles from './projects.module.scss';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+
 import { getProjectList } from '@/_data/config/core';
 import { useResize } from '@/_data';
 import { ETextTheme, ETitleSize, MainBlock, Text, Title } from '@/components/shared';
 
+import styles from './projects.module.scss';
+
 export const ProjectsWidget: React.FC = () => {
   const width = useResize();
+  const router = useRouter();
+
+  const handleClickProject = (id: string) => {
+    router.push(`/${id}`);
+  };
 
   return (
     <MainBlock>
@@ -18,7 +25,7 @@ export const ProjectsWidget: React.FC = () => {
       </Title>
       <div className={styles.projectWrapper}>
         {getProjectList().map((v) => (
-          <div className={styles.project}>
+          <div className={styles.project} onClick={() => handleClickProject(v.id)}>
             <img className={styles.img} src={v.imgSrc} alt='Картинка' />
             <div className={styles.projectTitleBlock}>
               <Title className={styles.projectTitle} size={ETitleSize.H3}>

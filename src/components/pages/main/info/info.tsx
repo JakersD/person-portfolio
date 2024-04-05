@@ -1,7 +1,8 @@
 import React from 'react';
 
-import styles from './info.module.scss';
 import { ETitleSize, MainBlock, TagList, Text, Title } from '@/components/shared';
+
+import styles from './info.module.scss';
 
 export const InfoWidget: React.FC = () => {
   return (

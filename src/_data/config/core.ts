@@ -3,7 +3,14 @@ import { IItem } from '@/components/shared';
 
 export const getProjectList = (): IProject[] => [
   {
-    id: 'x5',
+    id: 'sprouty-app',
+    title: 'Скачки роста. Мобильное приложение',
+    dates: ['2022', '2023'],
+    imgSrc: '/project-img.jpg',
+    role: 'Junior Product Designer',
+  },
+  {
+    id: 'project',
     title: 'X5 Retail Group',
     dates: ['2022', '2023'],
     imgSrc: '/project-img.jpg',
@@ -11,13 +18,6 @@ export const getProjectList = (): IProject[] => [
   },
   {
     id: 'project2',
-    title: 'X5 Retail Group',
-    dates: ['2022', '2023'],
-    imgSrc: '/project-img.jpg',
-    role: 'Junior Product Designer',
-  },
-  {
-    id: 'project3',
     title: 'X5 Retail Group',
     dates: ['2022', '2023'],
     imgSrc: '/project-img.jpg',
