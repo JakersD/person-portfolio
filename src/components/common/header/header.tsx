@@ -16,7 +16,7 @@ export const HeaderWidget: React.FC = () => {
 
   const handleToggle = () => setActive(!active);
 
-  if (width <= 1196) {
+  if (width && width <= 1196) {
     return (
       <header className={active ? `${styles.header} ${styles.headerActive}` : styles.header}>
         <div className={active ? `${styles.modalLogo} ${styles.modalLogoActive}` : styles.modalLogo}>
