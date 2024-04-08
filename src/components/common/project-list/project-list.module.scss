@@ -1,0 +1,54 @@
+@import '@/styles/vars.scss';
+
+.title {
+  margin-bottom: 32px;
+}
+
+.swiperWrapper {
+  margin-bottom: 32px;
+}
+
+.dots {
+  margin-bottom: 16px;
+}
+
+.swiperPagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+}
+
+.swiperBullet {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $active;
+  border-radius: 8px;
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $active-hover;
+    color: $white;
+  }
+}
+
+.swiperBulletActive {
+  background-color: $active;
+  color: $white;
+
+  &:hover {
+    cursor: default;
+    background-color: $active;
+    color: $white;
+  }
+}

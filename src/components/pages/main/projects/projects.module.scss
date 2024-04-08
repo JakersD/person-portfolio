@@ -9,55 +9,14 @@
   flex-direction: column;
 }
 
-.project {
-  cursor: pointer;
-  margin-bottom: 40px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.img {
-  width: 100%;
-  object-fit: cover;
-  max-height: 480px;
-  border-radius: 12px;
-  margin-bottom: 12px;
-}
-
-.projectTitleBlock {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .icon {
   background-color: $tagline-light;
   border-radius: 12px;
   padding: 8px;
 }
 
-@include md {
-  .project {
-    margin-bottom: 32px;
-  }
-
-  .img {
-    max-height: 320px;
-  }
-}
-
 @include sm {
-  .project {
-    margin-bottom: 24px;
-  }
-
   .title {
     margin-bottom: 24px;
-  }
-
-  .img {
-    margin-bottom: 12px;
   }
 }

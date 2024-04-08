@@ -23,6 +23,13 @@ export const getProjectList = (): IProject[] => [
     imgSrc: '/project-img.jpg',
     role: 'Junior Product Designer',
   },
+  {
+    id: 'project3',
+    title: 'X5 Retail Group',
+    dates: ['2022', '2023'],
+    imgSrc: '/project-img.jpg',
+    role: 'Junior Product Designer',
+  },
 ];
 
 export const getJobList = (): IItem[] => [

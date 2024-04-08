@@ -1,0 +1,59 @@
+@import '@/styles/vars.scss';
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev {
+  cursor: pointer;
+  margin-right: 24px;
+  border: none;
+  background-color: inherit;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/icons/pagin-arrow-left-not-active.svg');
+  background-size: 16px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &_Active {
+    background-image: url('/icons/pagin-arrow-left-active.svg');
+  }
+
+  &:hover {
+    background-color: $active-hover;
+    background-image: url('/icons/pagin-arrow-left-hover.svg');
+  }
+}
+
+.next {
+  cursor: pointer;
+  margin-left: 24px;
+  border: none;
+  background-color: inherit;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/icons/pagin-arrow-right-not-active.svg');
+  background-size: 16px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &_Active {
+    background-image: url('/icons/pagin-arrow-right-active.svg');
+  }
+
+  &:hover {
+    background-color: $active-hover;
+    background-image: url('/icons/pagin-arrow-right-hover.svg');
+  }
+}
