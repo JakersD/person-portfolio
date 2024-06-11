@@ -1,0 +1,22 @@
+@import '@/styles/vars.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.main {
+  width: stretch;
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+.back {
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-bottom: 4px;
+}

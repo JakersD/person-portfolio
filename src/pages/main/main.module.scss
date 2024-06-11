@@ -1,0 +1,19 @@
+@import '@/styles/vars.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main {
+  width: stretch;
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+@include lg {
+  .wrapper {
+    flex-direction: column;
+  }
+}

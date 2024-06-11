@@ -1,14 +1,14 @@
 import React from 'react';
 
-import documentIcon from '@public/icons/document.svg';
-import behanceIcon from '@public/icons/behance.svg';
-import telegramIcon from '@public/icons/telegram.svg';
-import whatsAppIcon from '@public/icons/whatsapp.svg';
-import mailIcon from '@public/icons/mail.svg';
-import { getUniqueKey } from '@/_data';
-import { Tag } from '..';
+import documentIcon from '@assets/icons/document.svg';
+import behanceIcon from '@assets/icons/behance.svg';
+import telegramIcon from '@assets/icons/telegram.svg';
+import whatsAppIcon from '@assets/icons/whatsapp.svg';
+import mailIcon from '@assets/icons/mail.svg';
 
 import styles from './tag-list.module.scss';
+import { getUniqueKey } from '@data/utils/core';
+import { Tag } from './tag';
 
 const getTagList = () => [
   {

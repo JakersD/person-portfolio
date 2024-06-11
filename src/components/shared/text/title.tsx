@@ -1,9 +1,8 @@
 import React from 'react';
 
-import { ETitleSize } from '..';
-import { combineStyles } from '@/_data';
-
 import styles from './title.module.scss';
+import { combineStyles } from '@data/utils/core';
+import { ETitleSize } from '@shared/model';
 
 interface IProps {
   size: ETitleSize;

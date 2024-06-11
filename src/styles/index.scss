@@ -1,7 +1,9 @@
 @import './reset.scss';
 @import './vars.scss';
+@import './fonts.scss';
 
 body {
+  font-family: 'Lato';
   max-width: 1360px;
   margin: 0 auto;
   background-color: #e5e7e9;

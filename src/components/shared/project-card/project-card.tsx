@@ -1,12 +1,14 @@
 import React from 'react';
-import Image from 'next/image';
 
 import styles from './project-card.module.scss';
-import { IProject } from '@/_data/models/project';
-import { getUniqueKey, useResize } from '@/_data';
 import { Title } from '../text/title';
 import { ETextTheme, ETitleSize } from '../model';
 import { Text } from '../text/text';
+import { getUniqueKey } from '@data/utils/core';
+import { useResize } from '@data/hooks/useResize';
+import { IProject } from '@data/models/project';
+
+import openIcon from '@assets/icons/open-icon.svg';
 
 interface IProps {
   project: IProject;
@@ -24,13 +26,7 @@ export const ProjectCard: React.FC<IProps> = ({ project, index, onClick }) => {
         <Title className={styles.projectTitle} size={ETitleSize.H3}>
           {project.title}
         </Title>
-        <Image
-          className={styles.icon}
-          src='/icons/open-icon.svg'
-          alt='Открыть проект'
-          width={40}
-          height={40}
-        />
+        <img className={styles.icon} src={openIcon} alt='Открыть проект' />
       </div>
       {width && width <= 860 ? (
         <>
