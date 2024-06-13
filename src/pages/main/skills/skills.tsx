@@ -1,14 +1,12 @@
 import React from 'react';
 
+import { ETitleSize, Text, Title, Wrapper } from '@components/shared';
+
 import styles from './skills.module.scss';
-import { MainBlock } from '@shared/blocks/main-block';
-import { Title } from '@shared/text/title';
-import { ETitleSize } from '@shared/model';
-import { Text } from '@shared/text/text';
 
 export const SkillsWidget: React.FC = () => {
   return (
-    <MainBlock>
+    <Wrapper>
       <div className={styles.parent}>
         <div className={styles.skills}>
           <Title className={styles.title} size={ETitleSize.H2}>
@@ -55,6 +53,6 @@ export const SkillsWidget: React.FC = () => {
           </ul>
         </div>
       </div>
-    </MainBlock>
+    </Wrapper>
   );
 };

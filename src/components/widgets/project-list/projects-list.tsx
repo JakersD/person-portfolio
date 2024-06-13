@@ -1,15 +1,15 @@
-import styles from './project-list.module.scss';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { PaginationOptions } from 'swiper/types';
-import { SwiperButtons } from './buttons';
-import { MainBlock } from '@components/shared/blocks/main-block';
-import { Title } from '@components/shared/text/title';
-import { ETitleSize } from '@components/shared/model';
-import { getProjectList } from '@data/config/core';
+
+import { ETitleSize, Title, Wrapper } from '@components/shared';
 import { getProjectsExcludeId, getQueryFromUrl, getUniqueKey } from '@data/utils/core';
-import { ProjectCard } from '@components/shared/project-card/project-card';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { getProjectList } from '@data/config/core';
+import { SwiperButtons } from './swiper-buttons';
+import { ProjectCard } from '../project-card/project-card';
+
+import styles from './project-list.module.scss';
 
 export const ProjectList: React.FC = () => {
   const url = useLocation().pathname;
@@ -31,7 +31,7 @@ export const ProjectList: React.FC = () => {
   };
 
   return (
-    <MainBlock>
+    <Wrapper>
       <Title className={styles.title} size={ETitleSize.H2}>
         Другие проекты
       </Title>
@@ -52,6 +52,6 @@ export const ProjectList: React.FC = () => {
           <div className={styles.dots} />
         </SwiperButtons>
       </Swiper>
-    </MainBlock>
+    </Wrapper>
   );
 };

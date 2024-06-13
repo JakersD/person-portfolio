@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
+import { Logo } from './logo/logo';
+import { Nav } from './nav/nav';
+import { BurgerButton } from '@components/shared';
+
 import styles from './short-header.module.scss';
-import { Logo } from './logo';
-import { Nav } from './nav';
-import { BurgerBtn } from '@shared/buttons/burger';
 
 export const ShortHeaderWidget: React.FC = () => {
   const [active, setActive] = useState(false);
@@ -14,7 +15,7 @@ export const ShortHeaderWidget: React.FC = () => {
     <header className={active ? `${styles.header} ${styles.headerActive}` : styles.header}>
       <div className={active ? `${styles.modalLogo} ${styles.modalLogoActive}` : styles.modalLogo}>
         <Logo isModal={active} isShort />
-        <BurgerBtn active={active} onClick={handleToggle} />
+        <BurgerButton active={active} onClick={handleToggle} />
       </div>
       {active && <Nav />}
     </header>

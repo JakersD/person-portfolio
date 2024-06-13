@@ -1,7 +1,8 @@
-import { SproutyApp } from '@pages/details/sprouty-app/SproutyApp';
-import { MainPage } from '@pages/main/main';
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+
+import { SproutyApp } from '@pages/details/sprouty-app/sprouty-app';
+import { MainPage } from '@pages/main/main';
 
 export const Router: React.FC = () => {
   return (

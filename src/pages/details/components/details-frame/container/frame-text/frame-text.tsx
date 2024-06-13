@@ -1,13 +1,14 @@
 import React from 'react';
 
-import styles from './details-frame-text.module.scss';
 import { Text } from '@components/shared/text/text';
+
+import styles from './frame-text.module.scss';
 
 interface ITextProps {
   children: string;
   margin?: boolean;
 }
 
-export const DetailsFrameText: React.FC<ITextProps> = ({ children, margin }) => {
+export const FrameText: React.FC<ITextProps> = ({ children, margin }) => {
   return <Text className={margin ? styles.margin : ''}>{children}</Text>;
 };

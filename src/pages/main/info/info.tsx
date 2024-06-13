@@ -1,15 +1,12 @@
 import React from 'react';
 
+import { ETitleSize, TagList, Text, Title, Wrapper } from '@components/shared';
+
 import styles from './info.module.scss';
-import { MainBlock } from '@shared/blocks/main-block';
-import { Title } from '@shared/text/title';
-import { ETitleSize } from '@shared/model';
-import { Text } from '@shared/text/text';
-import { TagList } from '@shared/buttons/tag-list';
 
 export const InfoWidget: React.FC = () => {
   return (
-    <MainBlock>
+    <Wrapper>
       <div className={styles.wrapper}>
         <Title className={styles.title} size={ETitleSize.H1}>
           Екатерина Черкасова - продуктовый дизайнер <span className={styles.nowrap}>из Москвы</span>
@@ -21,6 +18,6 @@ export const InfoWidget: React.FC = () => {
         </Text>
         <TagList />
       </div>
-    </MainBlock>
+    </Wrapper>
   );
 };

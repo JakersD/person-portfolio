@@ -1,9 +1,8 @@
 import React from 'react';
 
+import { ETextTheme, ETitleSize, Text, Title } from '@components/shared';
+
 import styles from './details-title.module.scss';
-import { Title } from '@components/shared/text/title';
-import { ETextTheme, ETitleSize } from '@components/shared/model';
-import { Text } from '@components/shared/text/text';
 
 interface IProps {
   title: string;

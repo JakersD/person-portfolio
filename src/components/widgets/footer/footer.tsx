@@ -2,17 +2,14 @@ import React from 'react';
 
 import PortfolioPhoto from '@assets/portfolio-photo.jpg';
 import NavigationIcon from '@assets/icons/navigation.svg';
+import { ETitleSize, Text, Title, Wrapper } from '@components/shared';
 
 import styles from './footer.module.scss';
-import { MainBlock } from '@shared/blocks/main-block';
-import { Title } from '@shared/text/title';
-import { ETitleSize } from '@shared/model';
-import { Text } from '@shared/text/text';
 
 export const Footer: React.FC = () => {
   return (
     <footer>
-      <MainBlock className={styles.main}>
+      <Wrapper className={styles.main}>
         <div className={styles.imgWrapper}>
           <img className={styles.portfolioPhoto} src={PortfolioPhoto} alt='Фото портфолио' />
         </div>
@@ -50,7 +47,7 @@ export const Footer: React.FC = () => {
             </li>
           </ul>
         </div>
-      </MainBlock>
+      </Wrapper>
       <div className={styles.footer}>
         <Text>{`© ${new Date().getFullYear()}`}</Text>
         <Text>Екатерина Черкасова</Text>

@@ -1,8 +1,9 @@
 import React from 'react';
 
-import styles from './nav.module.scss';
 import { getUniqueKey } from '@data/utils/core';
-import { Btn } from '@shared/buttons/btn';
+import { Button } from '@components/shared';
+
+import styles from './nav.module.scss';
 
 const getNavList = () => [
   {
@@ -39,9 +40,9 @@ export const Nav: React.FC = () => {
           </li>
         ))}
       </ul>
-      <Btn className={styles.btn} arrowIcon>
+      <Button className={styles.btn} arrowIcon>
         Связаться со мной
-      </Btn>
+      </Button>
     </>
   );
 };

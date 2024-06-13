@@ -1,14 +1,12 @@
 import React from 'react';
 
-import styles from './project-card.module.scss';
-import { Title } from '../text/title';
-import { ETextTheme, ETitleSize } from '../model';
-import { Text } from '../text/text';
-import { getUniqueKey } from '@data/utils/core';
-import { useResize } from '@data/hooks/useResize';
+import { ETextTheme, ETitleSize, Text, Title } from '@components/shared';
 import { IProject } from '@data/models/project';
+import { useResize } from '@data/hooks';
+import { getUniqueKey } from '@data/utils/core';
 
 import openIcon from '@assets/icons/open-icon.svg';
+import styles from './project-card.module.scss';
 
 interface IProps {
   project: IProject;

@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { ETextSize, ETextTheme, ETextWeight } from '../model';
+import { combineStyles } from '@data/utils/core';
 
 import styles from './text.module.scss';
-import { combineStyles } from '@data/utils/core';
 
 interface IProps {
   children: string;

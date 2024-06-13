@@ -1,8 +1,9 @@
 import React from 'react';
 
-import styles from './buttons.module.scss';
 import { combineStyles } from '@data/utils/core';
 import { useReactiveSwiper } from '@data/hooks';
+
+import styles from './swiper-buttons.module.scss';
 
 interface IProps {
   children: React.ReactNode;

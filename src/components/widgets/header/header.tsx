@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import { Logo } from './logo';
-import { Nav } from './nav';
+import { Logo } from './logo/logo';
+import { Nav } from './nav/nav';
+import { BurgerButton } from '@components/shared';
+import { useResize } from '@data/hooks/useResize';
 
 import styles from './header.module.scss';
-import { useResize } from '@data/hooks/useResize';
-import { BurgerBtn } from '@shared/buttons/burger';
 
 export const Header: React.FC = () => {
   const [active, setActive] = useState(false);
@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
       <header className={active ? `${styles.header} ${styles.headerActive}` : styles.header}>
         <div className={active ? `${styles.modalLogo} ${styles.modalLogoActive}` : styles.modalLogo}>
           <Logo isModal={active} />
-          <BurgerBtn active={active} onClick={handleToggle} />
+          <BurgerButton active={active} onClick={handleToggle} />
         </div>
         {active && <Nav />}
       </header>

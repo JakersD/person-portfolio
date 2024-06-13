@@ -1,13 +1,13 @@
 import React from 'react';
 
-import styles from './burger.module.scss';
+import styles from './burger-button.module.scss';
 
 interface IProps {
   active: boolean;
   onClick?: () => void;
 }
 
-export const BurgerBtn: React.FC<IProps> = ({ active, onClick }) => {
+export const BurgerButton: React.FC<IProps> = ({ active, onClick }) => {
   return (
     <button className={active ? `${styles.burger} ${styles.active}` : styles.burger} onClick={onClick}>
       <span></span>

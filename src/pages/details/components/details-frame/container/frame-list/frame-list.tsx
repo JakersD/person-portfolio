@@ -1,14 +1,15 @@
 import React from 'react';
 
-import styles from './details-frame-list.module.scss';
 import { getUniqueKey } from '@data/utils/core';
 import { Text } from '@components/shared/text/text';
+
+import styles from './frame-list.module.scss';
 
 interface IProps {
   list: string[];
 }
 
-export const DetailsFrameList: React.FC<IProps> = ({ list }) => {
+export const FrameList: React.FC<IProps> = ({ list }) => {
   return (
     <ul>
       {list.map((item, i) => (

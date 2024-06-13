@@ -1,8 +1,9 @@
 import React from 'react';
 
-import styles from './btn.module.scss';
-import { EBtnTheme } from '@shared/model';
+import { EBtnTheme } from '../model';
 import { combineStyles } from '@data/utils/core';
+
+import styles from './button.module.scss';
 
 interface IProps {
   children: string;
@@ -12,7 +13,7 @@ interface IProps {
   arrowIcon?: boolean;
 }
 
-export const Btn: React.FC<IProps> = ({
+export const Button: React.FC<IProps> = ({
   theme = EBtnTheme.PRIMARY,
   arrowIcon,
   className,

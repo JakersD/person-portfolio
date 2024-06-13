@@ -23,12 +23,10 @@
     "baseUrl": "src",
     "paths": {
       "@/*": ["/*"],
-      "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"],
       "@pages/*": ["pages/*"],
-      "@widgets/*": ["components/widgets/*"],
-      "@shared/*": ["components/shared/*"],
+      "@components/*": ["components/*"],
       "@data/*": ["__data__/*"],
+      "@assets/*": ["assets/*"],
       "@styles/*": ["styles/*"]
     }
   },
