@@ -1,3 +1,4 @@
+import { Wrapper } from '@components/shared';
 import { IDetailsFrameProps } from './details-frame';
 
-export const DetailsFrameView: React.FC<IDetailsFrameProps> = ({ children }) => <>{children}</>;
+export const DetailsFrameView: React.FC<IDetailsFrameProps> = ({ children }) => <Wrapper>{children}</Wrapper>;
