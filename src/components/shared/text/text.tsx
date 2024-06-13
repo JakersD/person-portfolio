@@ -24,7 +24,16 @@ export const Text: React.FC<IProps> = ({
 
   const renderSize = () => (size === ETextSize.MD ? styles.textMD : styles.textSM);
 
-  const renderTheme = () => (theme === ETextTheme.GENERAL ? styles.general : styles.second);
+  const renderTheme = () => {
+    switch (theme) {
+      case ETextTheme.GENERAL:
+        return styles.general;
+      case ETextTheme.SECOND:
+        return styles.second;
+      case ETextTheme.BLACK:
+        return styles.black;
+    }
+  };
 
   return (
     <p className={combineStyles([renderSize(), renderWeight(), renderTheme(), className])}>{children}</p>

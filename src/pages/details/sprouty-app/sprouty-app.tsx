@@ -15,10 +15,6 @@ export const SproutyApp: React.FC = () => {
       <div className={styles.wrapper}>
         <Header />
         <main className={styles.main}>
-          <Wrapper>
-            <ZoomableImg src={mainMD} />
-          </Wrapper>
-
           <DetailsFrame>
             <DetailsFrame.Container>
               <p>Привет</p>
@@ -28,6 +24,18 @@ export const SproutyApp: React.FC = () => {
           <DetailsFrame>
             <DetailsFrame.Container>
               <p>ХУЙЛО</p>
+            </DetailsFrame.Container>
+          </DetailsFrame>
+
+          <DetailsFrame>
+            <DetailsFrame.Container>
+              <DetailsFrame.Container.Title>Гипотезы</DetailsFrame.Container.Title>
+              <DetailsFrame.Container.Text>
+                После конкурентного анализа был составлен список гипотез. Для того, чтобы проверить гипотезы,
+                мы в ходе интервью решили опросить респондентов. Гипотеза считалась бы доказанной, если хотя
+                бы 7/10 респондентов подтвердили бы ее. Предполагается, что пользователи, которые используют
+                приложение, хотели бы:
+              </DetailsFrame.Container.Text>
             </DetailsFrame.Container>
           </DetailsFrame>
 
