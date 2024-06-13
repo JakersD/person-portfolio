@@ -18,6 +18,7 @@ export enum ETextSize {
 export enum ETextTheme {
   GENERAL = 'GENERAL',
   SECOND = 'SECOND',
+  BLACK = 'BLACK',
 }
 
 export enum ETitleSize {
