@@ -1,18 +1,24 @@
 import React from 'react';
 
-import { ShortHeaderWidget } from '@components/widgets/header/short-header';
 import { Footer } from '@components/widgets/footer/footer';
-import { PageWrapper } from '@components/shared';
+import { PageWrapper, Wrapper } from '@components/shared';
 import { DetailsFrame } from '../components/details-frame/details-frame';
 
 import styles from './sprouty-app.module.scss';
+import { Header, ZoomableImg } from '@components/widgets';
+
+import mainMD from '@assets/sprouty-app/main-md.jpg';
 
 export const SproutyApp: React.FC = () => {
   return (
     <PageWrapper>
       <div className={styles.wrapper}>
-        <ShortHeaderWidget />
+        <Header />
         <main className={styles.main}>
+          <Wrapper>
+            <ZoomableImg src={mainMD} />
+          </Wrapper>
+
           <DetailsFrame>
             <DetailsFrame.Container>
               <p>Привет</p>

@@ -4,13 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
 }
 
 .main {
+  max-width: 960px;
   width: stretch;
-  width: -webkit-fill-available;
-  width: -moz-available;
 }
 
 .back {
@@ -19,4 +17,14 @@
 
 .title {
   margin-bottom: 4px;
+}
+
+@include lg {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .main {
+    max-width: none;
+  }
 }
