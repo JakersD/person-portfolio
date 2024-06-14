@@ -1,0 +1,37 @@
+@import '@/styles/vars.scss';
+
+.modalWrapper {
+  background-color: rgba(11, 31, 51, 0.16);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.wrapper {
+  width: stretch;
+  background-color: #fff;
+  margin: 0 32px;
+}
+
+.gallery {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  z-index: 2;
+  //   right: 32px;
+  //   top: 32px;
+}
+
+.image {
+  width: 100%;
+}
