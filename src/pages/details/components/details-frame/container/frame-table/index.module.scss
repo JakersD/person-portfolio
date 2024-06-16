@@ -1,0 +1,9 @@
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.tableBody {
+  background-color: #f8f8f8;
+}

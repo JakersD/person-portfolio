@@ -6,18 +6,17 @@ import { ListInfoBlock } from '@components/shared/blocks/list-info-block';
 import { getUniqueKey } from '@data/utils/core';
 import { ETextSize, ETextTheme, Text } from '@components/shared';
 
-interface IData {
-  url?: string;
-  text: string;
-}
 interface IProp {
-  data: Array<IData>;
+  tableData: Array<{
+    url?: string;
+    text: string;
+  }>;
   isImg?: boolean;
 }
 
-export const FrameMultiList: React.FC<IProp> = ({ data, isImg }) => (
+export const FrameMultiList: React.FC<IProp> = ({ tableData, isImg }) => (
   <div className={isImg ? styles.imgGrid : styles.grid}>
-    {data.map((item, i) => (
+    {tableData.map((item, i) => (
       <ListInfoBlock key={getUniqueKey(item.text, i)}>
         {item.url && <img src={item.url} className={styles.img} alt='Тематическая иконка' />}
 

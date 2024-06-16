@@ -1,0 +1,96 @@
+@import '@/styles/vars.scss';
+
+.graph {
+  display: flex;
+  align-items: center;
+}
+
+.graphImg {
+  margin-right: 24px;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.dot1 {
+  left: 7.2%;
+  bottom: 5%;
+}
+
+.dot2 {
+  left: 27%;
+  bottom: 19.2%;
+}
+
+.dot3 {
+  left: 48%;
+  bottom: 39.4%;
+}
+
+.dot4 {
+  right: 23.5%;
+  top: 1.5%;
+}
+
+.graphDot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: $active;
+  }
+
+  div {
+    width: 12px;
+    height: 12px;
+    border: 4px solid #6595ff;
+    border-radius: 100%;
+  }
+
+  & + .dot4 p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 212px;
+}
+
+.dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.graphInfoText {
+  padding: 16px 24px;
+  border-radius: 16px;
+  background-color: rgba(179, 198, 241, 0.2);
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.infoQuestion {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: $dark-summer;
+}
+
+.infoAnswer {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: $active;
+}

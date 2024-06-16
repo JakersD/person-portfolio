@@ -3,7 +3,7 @@
 .header {
   position: sticky;
   top: 32px;
-  width: 412px;
+  min-width: 304px;
   background-color: $white;
   border: 1px solid $tagline-dark;
   border-radius: 20px;
