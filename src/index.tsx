@@ -11,8 +11,8 @@ import { SproutyApp } from '@pages/details/sprouty-app/sprouty-app';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path='/' element={<MainPage />} />
-      <Route path='/projects/sprouty-app' element={<SproutyApp />} />
+      <Route path='/person-portfolio' element={<MainPage />} />
+      <Route path='/person-portfolio/projects/sprouty-app' element={<SproutyApp />} />
     </Route>,
   ),
 );
