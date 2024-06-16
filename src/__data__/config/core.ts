@@ -1,5 +1,5 @@
+import { IItem } from '@components/shared';
 import { IProject } from '@data/models/project';
-import { IItem } from '@shared/model';
 
 export const getProjectList = (): IProject[] => [
   {
