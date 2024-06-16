@@ -18,7 +18,7 @@ export const FrameHeader: React.FC<IProps> = ({ title, links, subtitle }) => {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate('/');
+    navigate(-1);
   };
 
   return (

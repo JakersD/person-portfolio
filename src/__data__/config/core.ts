@@ -1,33 +1,14 @@
 import { IItem } from '@components/shared';
 import { IProject } from '@data/models/project';
 
+import project from '@assets/project-img.jpg';
+
 export const getProjectList = (): IProject[] => [
   {
     id: 'sprouty-app',
     title: 'Скачки роста. Мобильное приложение',
     dates: ['2022', '2023'],
-    imgSrc: '/src/assets/project-img.jpg',
-    role: 'Junior Product Designer',
-  },
-  {
-    id: 'project',
-    title: 'X5 Retail Group',
-    dates: ['2022', '2023'],
-    imgSrc: '/src/assets/project-img.jpg',
-    role: 'Junior Product Designer',
-  },
-  {
-    id: 'project2',
-    title: 'X5 Retail Group',
-    dates: ['2022', '2023'],
-    imgSrc: '/src/assets/project-img.jpg',
-    role: 'Junior Product Designer',
-  },
-  {
-    id: 'project3',
-    title: 'X5 Retail Group',
-    dates: ['2022', '2023'],
-    imgSrc: '/src/assets/project-img.jpg',
+    imgSrc: project,
     role: 'Junior Product Designer',
   },
 ];
