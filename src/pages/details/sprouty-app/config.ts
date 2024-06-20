@@ -1,3 +1,10 @@
+import article from '@assets/icons/article.svg';
+import horseToy from '@assets/icons/horse-toy.svg';
+import calendar from '@assets/icons/calendar.svg';
+import clock from '@assets/icons/clock-play.svg';
+import chartLine from '@assets/icons/chart-line.svg';
+import book from '@assets/icons/book.svg';
+
 export const hypothesisTableData = [
   {
     text: 'Быть более информированными о развитии и скачках роста ребенка, чтобы понимать что происходит в данный момент.',
@@ -33,27 +40,27 @@ export const hypothesisTableData = [
 
 export const conclusionTableData = [
   {
-    url: '/article.svg',
+    url: article,
     text: 'Реализовать возможность изучать информацию о воспитании и развитии ребенка каждую неделю',
   },
   {
-    url: '/horseToy.svg',
+    url: horseToy,
     text: 'Реализовать возможность просматривать игры и упражнения, подходящие ребенку по возрасту',
   },
   {
-    url: '/calendarEvent.svg',
+    url: calendar,
     text: 'Реализовать календарь с отмеченными прогнозируемыми периодами кризисов, связанных с ростом ребенка',
   },
   {
-    url: '/clockPlay.svg',
+    url: clock,
     text: 'Спроектировать трекеры сна и кормления и добавить возможность вносить инфомацию вручную',
   },
   {
-    url: '/chartLine.svg',
+    url: chartLine,
     text: 'Реализовать статистику о сне и кормлении ребенка в виде графика или диаграммы',
   },
   {
-    url: '/book.svg',
+    url: book,
     text: 'Спроектировать библиотеку статей, подходящих по возрасту и сгруппированных по тематике',
   },
 ];

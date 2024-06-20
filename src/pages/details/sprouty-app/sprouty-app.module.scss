@@ -4,11 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 .main {
-  min-width: 770px;
-  max-width: 960px;
   width: stretch;
 }
 

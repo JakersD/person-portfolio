@@ -17,16 +17,16 @@ export const SkillsWidget: React.FC = () => {
               <Text>Знание принципов дизайна</Text>
             </li>
             <li className={styles.item}>
-              <Text>Умение проводить юзабилити тестирование</Text>
-            </li>
-            <li className={styles.item}>
-              <Text>Знание адаптивного дизайна</Text>
-            </li>
-            <li className={styles.item}>
-              <Text>Знание дизайна мобильных приложений</Text>
+              <Text>Умение проводить UX исследования</Text>
             </li>
             <li className={styles.item}>
               <Text>Понимание HTML, CSS, JS</Text>
+            </li>
+            <li className={styles.item}>
+              <Text>Гайдлайны IOS и Material Design</Text>
+            </li>
+            <li className={styles.item}>
+              <Text>Умею работать с метриками</Text>
             </li>
           </ul>
         </div>

@@ -4,32 +4,33 @@ import { Footer } from '@components/widgets/footer/footer';
 import { ETitleSize, PageWrapper } from '@components/shared';
 
 import styles from './sprouty-app.module.scss';
-import { Header, ProjectList } from '@components/widgets';
+import { ShortHeaderWidget } from '@components/widgets';
 
-import mainMD from '@assets/sprouty-app/main-md.jpg';
 import appleSkeletal from '@assets/icons/apple-skeletal.svg';
 import googlePlaySkeletal from '@assets/icons/google-play-skeletal.svg';
 
-import process1 from '@assets/sprouty-app/process-1.jpg';
-import process2 from '@assets/sprouty-app/process-2.jpg';
-import process3 from '@assets/sprouty-app/process-3.jpg';
-import process4 from '@assets/sprouty-app/process-4.jpg';
+import main1 from '@assets/sprouty-app/main1.webp';
 
-import additional1 from '@assets/sprouty-app/additional-1.jpg';
-import additional2 from '@assets/sprouty-app/additional-2.jpg';
-import additional3 from '@assets/sprouty-app/additional-3.jpg';
+import process1 from '@assets/sprouty-app/process1.webp';
+import process2 from '@assets/sprouty-app/process2.webp';
+import process3 from '@assets/sprouty-app/process3.webp';
+import process4 from '@assets/sprouty-app/process4.webp';
 
-import game1 from '@assets/sprouty-app/game-1.jpg';
+import additional1 from '@assets/sprouty-app/additional1.webp';
+import additional2 from '@assets/sprouty-app/additional2.webp';
+import additional3 from '@assets/sprouty-app/additional3.webp';
 
-import calendar1 from '@assets/sprouty-app/calendar-1.jpg';
-import calendar2 from '@assets/sprouty-app/calendar-2.jpg';
+import games1 from '@assets/sprouty-app/games1.webp';
 
-import tracker1 from '@assets/sprouty-app/tracker-1.jpg';
-import tracker2 from '@assets/sprouty-app/tracker-2.jpg';
+import calendar1 from '@assets/sprouty-app/calendar1.webp';
+import calendar2 from '@assets/sprouty-app/calendar2.webp';
 
-import styleLib1 from '@assets/sprouty-app/style-lib-1.jpg';
+import tracker1 from '@assets/sprouty-app/tracker1.webp';
+import tracker2 from '@assets/sprouty-app/tracker2.webp';
 
-import results1 from '@assets/sprouty-app/results-1.jpg';
+import lib1 from '@assets/sprouty-app/library1.webp';
+
+import results1 from '@assets/sprouty-app/results1.webp';
 
 import { DetailsFrame } from '../components';
 import { conclusionTableData, hypothesisTableData, interviewTableData } from './config';
@@ -39,7 +40,7 @@ export const SproutyApp: React.FC = () => {
   return (
     <PageWrapper>
       <div className={styles.wrapper}>
-        <Header />
+        <ShortHeaderWidget />
         <main className={styles.main}>
           {/* ЗАГОЛОВОК */}
           <DetailsFrame>
@@ -60,7 +61,7 @@ export const SproutyApp: React.FC = () => {
               />
             </DetailsFrame.Container>
             <DetailsFrame.Container>
-              <DetailsFrame.Container.Gallery images={[mainMD]} />
+              <DetailsFrame.Container.Gallery images={[main1]} />
             </DetailsFrame.Container>
           </DetailsFrame>
 
@@ -225,7 +226,7 @@ export const SproutyApp: React.FC = () => {
               </DetailsFrame.Container.Text>
             </DetailsFrame.Container>
             <DetailsFrame.Container>
-              <DetailsFrame.Container.Gallery images={[game1]} />
+              <DetailsFrame.Container.Gallery images={[games1]} />
             </DetailsFrame.Container>
           </DetailsFrame>
 
@@ -317,7 +318,7 @@ export const SproutyApp: React.FC = () => {
               </DetailsFrame.Container.Text>
             </DetailsFrame.Container>
             <DetailsFrame.Container>
-              <DetailsFrame.Container.Gallery images={[styleLib1]} />
+              <DetailsFrame.Container.Gallery images={[lib1]} />
             </DetailsFrame.Container>
           </DetailsFrame>
 
@@ -353,7 +354,7 @@ export const SproutyApp: React.FC = () => {
             </DetailsFrame.Container>
           </DetailsFrame>
 
-          <ProjectList />
+          {/* <ProjectList /> */}
 
           <Footer />
         </main>

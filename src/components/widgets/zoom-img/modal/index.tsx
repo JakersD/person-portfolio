@@ -22,6 +22,18 @@ const portal = document.getElementById('zoom-modal');
 export const Modal: React.FC<IProps> = ({ isOpen, toggleModal, images, activeIndex }) => {
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : 'unset';
+
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        toggleModal();
+      }
+    };
+
+    if (isOpen) {
+      window.addEventListener('keydown', handleEsc);
+    }
+
+    return () => window.removeEventListener('keydown', handleEsc);
   }, [isOpen]);
 
   const stopPropagation = (e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation();

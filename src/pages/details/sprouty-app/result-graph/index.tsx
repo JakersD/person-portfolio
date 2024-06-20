@@ -1,6 +1,6 @@
 import React from 'react';
 
-import graph from '@assets/sprouty-app/graph.png';
+import graph from '@assets/sprouty-app/graph.svg';
 
 import styles from './index.module.scss';
 import { ETextSize, ETextTheme, Text } from '@components/shared';
