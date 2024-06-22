@@ -8,7 +8,7 @@ import styles from './experience.module.scss';
 
 export const ExperienceWidget: React.FC = () => {
   return (
-    <Wrapper>
+    <Wrapper id='experience'>
       <Title className={styles.title} size={ETitleSize.H2}>
         Опыт работы
       </Title>

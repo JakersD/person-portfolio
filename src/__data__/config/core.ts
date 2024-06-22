@@ -7,9 +7,9 @@ export const getProjectList = (): IProject[] => [
   {
     id: 'sprouty-app',
     title: 'Скачки роста. Мобильное приложение',
-    dates: ['2022', '2023'],
+    dates: ['2021', '2022'],
     imgSrc: sproutyMain,
-    role: 'Junior Product Designer',
+    role: 'Стажер UI/UX дизайнер',
   },
 ];
 

@@ -58,6 +58,7 @@ export const Modal: React.FC<IProps> = ({ isOpen, toggleModal, images, activeInd
                   navigation
                   spaceBetween={32}
                   grabCursor
+                  className={styles.swiper}
                 >
                   {images.map((image, i) => (
                     <SwiperSlide key={getUniqueKey(image, i)}>

@@ -5,10 +5,11 @@ import NavigationIcon from '@assets/icons/navigation.svg';
 import { ETitleSize, Text, Title, Wrapper } from '@components/shared';
 
 import styles from './footer.module.scss';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
-    <footer>
+    <footer id='contacts'>
       <Wrapper className={styles.main}>
         <div className={styles.imgWrapper}>
           <img className={styles.portfolioPhoto} src={PortfolioPhoto} alt='Фото портфолио' />
@@ -17,7 +18,7 @@ export const Footer: React.FC = () => {
           <Title className={styles.title} size={ETitleSize.H2}>
             В данный момент активно ищу работу и открыта к новым предложениям
           </Title>
-          <a className={styles.link} href='#'>
+          <a className={styles.link} href='mailto:kolyada.0504@gmail.com'>
             <Title className={styles.linkTitle} size={ETitleSize.H2}>
               kolyada.0504@gmail.com
             </Title>
@@ -26,24 +27,28 @@ export const Footer: React.FC = () => {
 
           <ul className={styles.list}>
             <li className={styles.item}>
-              <a className={styles.itemLink} href='#'>
+              <Link
+                className={styles.itemLink}
+                to='/person-portfolio/CV_Ekaterina_Cherkasova.pdf'
+                target='_blank'
+              >
                 Download CV
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.itemLink} href='#'>
+              <Link className={styles.itemLink} to='https://t.me/cherkasova_kolyada' target='_blank'>
                 Telegram
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.itemLink} href='#'>
+              <Link className={styles.itemLink} to='https://wa.me/79153109996' target='_blank'>
                 WhatsApp
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.itemLink} href='#'>
+              <Link className={styles.itemLink} to='https://www.behance.net/kolyada050e3a5' target='_blank'>
                 Behance
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

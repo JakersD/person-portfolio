@@ -4,6 +4,7 @@ import { getUniqueKey } from '@data/utils/core';
 import { Button } from '@components/shared';
 
 import styles from './nav.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 const getNavList = () => [
   {
@@ -29,14 +30,24 @@ const getNavList = () => [
 ];
 
 export const Nav: React.FC = () => {
+  const navigate = useNavigate();
+
+  const anchorRedirect = (link: string) => {
+    if (link === 'contacts') {
+      return navigate(`#${link}`);
+    }
+
+    return navigate(`/person-portfolio/#${link}`);
+  };
+
   return (
     <>
       <ul className={styles.list}>
         {getNavList().map((v, i) => (
           <li className={styles.elem} key={getUniqueKey(v.link, i)}>
-            <a className={styles.link} href={`#${v.link}`}>
+            <p className={styles.link} onClick={() => anchorRedirect(v.link)}>
               {v.title}
-            </a>
+            </p>
           </li>
         ))}
       </ul>

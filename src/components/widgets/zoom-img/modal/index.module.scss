@@ -13,14 +13,21 @@
   z-index: 4;
 }
 
+.swiper {
+  height: 100%;
+}
+
 .wrapper {
-  width: stretch;
+  width: 98%;
+  height: 95%;
   background-color: #fff;
-  margin: 0 32px;
+  margin: 32px;
 }
 
 .gallery {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .icon {
@@ -32,4 +39,7 @@
 
 .image {
   width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  object-position: center;
 }

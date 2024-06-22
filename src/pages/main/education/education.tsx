@@ -8,7 +8,7 @@ import { ItemList } from '@components/widgets';
 
 export const EducationWidget: React.FC = () => {
   return (
-    <Wrapper>
+    <Wrapper id='education'>
       <Title className={styles.title} size={ETitleSize.H2}>
         Образование
       </Title>

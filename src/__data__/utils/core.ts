@@ -8,4 +8,4 @@ export const combineStyles = (styles: Array<string | undefined | null>): string 
 export const getProjectsExcludeId = (projectList: IProject[], id: string) =>
   projectList.filter((project) => project.id !== id);
 
-export const getQueryFromUrl = (url: string) => url.split('/')[1];
+export const getQueryFromUrl = (url: string) => url.split('/')[url.split('/').length - 1];

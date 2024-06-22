@@ -47,7 +47,7 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Header
                 title='Скачки роста. Мобильное приложение'
-                subtitle='Стажер UI/UX дизайнер | 2022-2023'
+                subtitle='Стажер UI/UX дизайнер | 2021-2022'
                 links={[
                   {
                     icon: appleSkeletal,
@@ -89,10 +89,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title>Моя роль и задачи</DetailsFrame.Container.Title>
               <DetailsFrame.Container.Text>
-                Я занималась доработкой существующего функционала приложения и добавлений новых функций. Когда
-                я начала работу с командой, уже был создан стиль приложения и основные компоненты UI-Kita. По
-                ходу работы много общалась с владельцем продукта, вместе с которым проводили исследования с
-                аудиторией и строили гипотезы. В мои задачи входило:
+                Я занималась доработкой существующего функционала приложения и добавлением новых функций.
+                Когда я начала работу с командой, уже был создан стиль приложения и основные компоненты
+                UI-Kita. По ходу работы много общалась с владельцем продукта, вместе с которым проводили
+                исследования с аудиторией и строили гипотезы. В мои задачи входило:
               </DetailsFrame.Container.Text>
               <DetailsFrame.Container.Gap size={12} />
               <DetailsFrame.Container.List

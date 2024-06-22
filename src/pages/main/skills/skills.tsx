@@ -6,7 +6,7 @@ import styles from './skills.module.scss';
 
 export const SkillsWidget: React.FC = () => {
   return (
-    <Wrapper>
+    <Wrapper id='skills'>
       <div className={styles.parent}>
         <div className={styles.skills}>
           <Title className={styles.title} size={ETitleSize.H2}>

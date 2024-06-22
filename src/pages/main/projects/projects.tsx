@@ -16,7 +16,7 @@ export const ProjectsWidget: React.FC = () => {
   };
 
   return (
-    <Wrapper>
+    <Wrapper id='projects'>
       <Title className={styles.title} size={ETitleSize.H2}>
         Проекты
       </Title>

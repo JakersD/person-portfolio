@@ -32,19 +32,19 @@ export const ResultGraph: React.FC = () => {
 
         <div className={styles.dates}>
           <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
-            Янв, 2023
+            Янв, 2022
           </Text>
           <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
-            Апр, 2023
+            Апр, 2022
           </Text>
           <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
-            Авг, 2023
+            Авг, 2022
           </Text>
           <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
-            Дек, 2023
+            Дек, 2022
           </Text>
           <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
-            Фев, 2024
+            Фев, 2023
           </Text>
         </div>
       </div>

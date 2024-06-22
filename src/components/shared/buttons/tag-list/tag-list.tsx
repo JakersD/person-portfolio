@@ -14,22 +14,28 @@ const getTagList = () => [
   {
     text: 'Скачать CV',
     icon: documentIcon,
+    link: '/person-portfolio/CV_Ekaterina_Cherkasova.pdf',
   },
   {
     text: 'Behance',
     icon: behanceIcon,
+    link: 'https://www.behance.net/kolyada050e3a5',
   },
   {
     text: 'Telegram',
     icon: telegramIcon,
+    link: 'https://t.me/cherkasova_kolyada',
   },
   {
     text: 'WhatsApp',
     icon: whatsAppIcon,
+    link: 'https://wa.me/79153109996',
   },
   {
     text: 'Mail',
     icon: mailIcon,
+    link: 'mailto:kolyada.0504@gmail.com',
+    isLink: true,
   },
 ];
 
@@ -38,7 +44,9 @@ export const TagList: React.FC = () => {
     <ul className={styles.list}>
       {getTagList().map((v, i) => (
         <li className={styles.item} key={getUniqueKey(v.text, i)}>
-          <Tag icon={v.icon}>{v.text}</Tag>
+          <Tag icon={v.icon} link={v.link} isLink={v.isLink}>
+            {v.text}
+          </Tag>
         </li>
       ))}
     </ul>

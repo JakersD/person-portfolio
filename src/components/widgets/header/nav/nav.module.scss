@@ -15,10 +15,12 @@
 }
 
 .link {
+  display: inline-block;
   font-size: 18px;
   line-height: 26px;
   color: #30475e;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: $active;

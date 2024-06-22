@@ -3,6 +3,7 @@ import React from 'react';
 import PortfolioPhoto from '@assets/portfolio-photo.jpg';
 
 import styles from './logo.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 interface IProps {
   isModal?: boolean;
@@ -10,8 +11,12 @@ interface IProps {
 }
 
 export const Logo: React.FC<IProps> = ({ isModal = false, isShort = false }) => {
+  const navigate = useNavigate();
+
+  const redictToMain = () => navigate('/person-portfolio');
+
   return (
-    <div className={isShort ? styles.shortLogo : styles.logo}>
+    <div className={isShort ? styles.shortLogo : styles.logo} onClick={redictToMain}>
       <img className={styles.img} src={PortfolioPhoto} alt='Фотография' />
       <div>
         <p className={styles.name}>Екатерина Черкасова</p>
