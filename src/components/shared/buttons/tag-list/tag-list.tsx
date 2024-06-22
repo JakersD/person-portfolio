@@ -9,32 +9,33 @@ import mailIcon from '@assets/icons/mail.svg';
 import styles from './tag-list.module.scss';
 import { getUniqueKey } from '@data/utils/core';
 import { Tag } from './tag';
+import { ELinks } from '@data/config/links';
 
 const getTagList = () => [
   {
     text: 'Скачать CV',
     icon: documentIcon,
-    link: '/person-portfolio/CV_Ekaterina_Cherkasova.pdf',
+    link: ELinks.CV,
   },
   {
     text: 'Behance',
     icon: behanceIcon,
-    link: 'https://www.behance.net/kolyada050e3a5',
+    link: ELinks.BEHANCE,
   },
   {
     text: 'Telegram',
     icon: telegramIcon,
-    link: 'https://t.me/cherkasova_kolyada',
+    link: ELinks.TELEGRAM,
   },
   {
     text: 'WhatsApp',
     icon: whatsAppIcon,
-    link: 'https://wa.me/79153109996',
+    link: ELinks.WHATS_APP,
   },
   {
     text: 'Mail',
     icon: mailIcon,
-    link: 'mailto:kolyada.0504@gmail.com',
+    link: ELinks.MAIL,
     isLink: true,
   },
 ];

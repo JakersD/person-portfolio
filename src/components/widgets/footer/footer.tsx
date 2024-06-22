@@ -6,6 +6,7 @@ import { ETitleSize, Text, Title, Wrapper } from '@components/shared';
 
 import styles from './footer.module.scss';
 import { Link } from 'react-router-dom';
+import { ELinks } from '@data/config/links';
 
 export const Footer: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ export const Footer: React.FC = () => {
           <Title className={styles.title} size={ETitleSize.H2}>
             В данный момент активно ищу работу и открыта к новым предложениям
           </Title>
-          <a className={styles.link} href='mailto:kolyada.0504@gmail.com'>
+          <a className={styles.link} href={ELinks.MAIL}>
             <Title className={styles.linkTitle} size={ETitleSize.H2}>
               kolyada.0504@gmail.com
             </Title>
@@ -27,26 +28,22 @@ export const Footer: React.FC = () => {
 
           <ul className={styles.list}>
             <li className={styles.item}>
-              <Link
-                className={styles.itemLink}
-                to='/person-portfolio/CV_Ekaterina_Cherkasova.pdf'
-                target='_blank'
-              >
+              <Link className={styles.itemLink} to={ELinks.CV} target='_blank'>
                 Download CV
               </Link>
             </li>
             <li>
-              <Link className={styles.itemLink} to='https://t.me/cherkasova_kolyada' target='_blank'>
+              <Link className={styles.itemLink} to={ELinks.TELEGRAM} target='_blank'>
                 Telegram
               </Link>
             </li>
             <li>
-              <Link className={styles.itemLink} to='https://wa.me/79153109996' target='_blank'>
+              <Link className={styles.itemLink} to={ELinks.WHATS_APP} target='_blank'>
                 WhatsApp
               </Link>
             </li>
             <li>
-              <Link className={styles.itemLink} to='https://www.behance.net/kolyada050e3a5' target='_blank'>
+              <Link className={styles.itemLink} to={ELinks.BEHANCE} target='_blank'>
                 Behance
               </Link>
             </li>

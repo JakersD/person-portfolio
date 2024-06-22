@@ -35,6 +35,7 @@ import results1 from '@assets/sprouty-app/results1.webp';
 import { DetailsFrame } from '../components';
 import { conclusionTableData, hypothesisTableData, interviewTableData } from './config';
 import { ResultGraph } from './result-graph';
+import { ELinks } from '@data/config/links';
 
 export const SproutyApp: React.FC = () => {
   return (
@@ -51,11 +52,11 @@ export const SproutyApp: React.FC = () => {
                 links={[
                   {
                     icon: appleSkeletal,
-                    link: 'https://apps.apple.com/ru/app/sprouty-baby-milestones-log/id1662980687?l=en-GB',
+                    link: ELinks.SPROUTY_APP_APPLE,
                   },
                   {
                     icon: googlePlaySkeletal,
-                    link: 'https://play.google.com/store/apps/details?id=happy.mom.android&hl=en_US&pli=1',
+                    link: ELinks.SPROUTY_APP_GOOGLE,
                   },
                 ]}
               />
