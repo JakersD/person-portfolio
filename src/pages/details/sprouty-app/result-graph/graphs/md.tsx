@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../result-graph.module.scss';
 
 export const GraphMD: React.FC = () => (
-  <>
+  <svg width='100%' height='175' viewBox={`0 0 512 175`}>
     <path
       opacity='0.3'
       d='M268.255 100.708L146.994 139.917L32.7828 166.745L0 175H521V0L484.692 5.7783L379.646 28.066L268.255 100.708Z'
@@ -57,5 +57,5 @@ export const GraphMD: React.FC = () => (
       </text>
       <circle cx='6' cy='6' r='6' fill='white' stroke='#6595FF' strokeWidth='4' />
     </g>
-  </>
+  </svg>
 );

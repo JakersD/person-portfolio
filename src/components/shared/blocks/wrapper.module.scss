@@ -17,13 +17,13 @@
 
 @include md {
   .wrapper {
-    padding: 32px 24px 20px 24px;
+    padding: 32px 24px;
     margin-bottom: 16px;
   }
 }
 
 @include sm {
   .wrapper {
-    padding: 24px 16px 24px 16px;
+    padding: 24px 16px;
   }
 }

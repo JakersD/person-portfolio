@@ -10,9 +10,9 @@ body {
   padding: 32px 40px;
 }
 
-@include lg {
+@include md {
   body {
-    padding: 16px 40px;
+    padding: 32px 24px;
   }
 }
 

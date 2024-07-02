@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../result-graph.module.scss';
 
 export const GraphLG: React.FC = () => (
-  <>
+  <svg width='100%' height='212' viewBox={`0 0 737 212`}>
     <path
       opacity='0.3'
       d='M379.47 122L207.936 169.5L46.3742 202L0 212H737V0L685.639 7L537.043 34L379.47 122Z'
@@ -58,5 +58,5 @@ export const GraphLG: React.FC = () => (
       </text>
       <circle cx='6' cy='6' r='6' fill='white' stroke='#6595FF' strokeWidth='4' />
     </g>
-  </>
+  </svg>
 );

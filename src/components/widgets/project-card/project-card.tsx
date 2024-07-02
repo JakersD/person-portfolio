@@ -7,6 +7,7 @@ import { getUniqueKey } from '@data/utils/core';
 
 import openIcon from '@assets/icons/open-icon.svg';
 import styles from './project-card.module.scss';
+import { EScreenSize } from '@data/hooks/useResize';
 
 interface IProps {
   project: IProject;
@@ -15,7 +16,7 @@ interface IProps {
 }
 
 export const ProjectCard: React.FC<IProps> = ({ project, index, onClick }) => {
-  const width = useResize();
+  const screenSize = useResize();
 
   return (
     <div
@@ -31,7 +32,7 @@ export const ProjectCard: React.FC<IProps> = ({ project, index, onClick }) => {
         {/* <img className={styles.icon} src={openIcon} alt='Открыть проект' /> */}
         <DecoratedIcon icon={openIcon} />
       </div>
-      {width && width <= 860 ? (
+      {screenSize === EScreenSize.SM ? (
         <>
           <Text theme={ETextTheme.SECOND}>{project.role}</Text>
           <Text theme={ETextTheme.SECOND}>{`${project.dates[0]}-${project.dates[1]}`}</Text>

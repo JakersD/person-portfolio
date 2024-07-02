@@ -61,6 +61,7 @@ export const SproutyApp: React.FC = () => {
                 ]}
               />
             </DetailsFrame.Container>
+            <DetailsFrame.Container.Gap size={8} />
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[main1]} />
             </DetailsFrame.Container>
@@ -151,7 +152,7 @@ export const SproutyApp: React.FC = () => {
           </DetailsFrame>
 
           {/* ГИПОТЕЗЫ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Гипотезы
@@ -166,10 +167,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.MultiList tableData={hypothesisTableData} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* ИНТЕРВЬЮ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Интервью
@@ -187,10 +188,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Table table={interviewTableData} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* ВЫВОДЫ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title>Выводы</DetailsFrame.Container.Title>
               <DetailsFrame.Container.Text>
@@ -201,10 +202,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.MultiList tableData={conclusionTableData} isImg={true} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* ДОПОЛНЕНИЯ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title>
                 Дополнения главного экрана
@@ -226,10 +227,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[additional1, additional2, additional3]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* ИГРЫ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Игры и упражнения
@@ -245,10 +246,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[games1]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* КАЛЕНДАРЬ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Календарь и добавление событий
@@ -270,10 +271,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[calendar1, calendar2]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* ТРЕКЕРЫ И СТАТИСТИКА */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Трекеры и статистика
@@ -317,10 +318,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[tracker1, tracker2]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* БИБЛИОТЕКА */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Библиотека статей
@@ -339,10 +340,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[lib1]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* ИТОГИ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Итоги
@@ -357,10 +358,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[results1]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* РЕЗУЛЬТАТЫ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Результаты
@@ -375,7 +376,7 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <ResultGraph />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* <ProjectList /> */}
 

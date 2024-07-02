@@ -2,13 +2,13 @@
 
 .item {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 8px;
 
   &::before {
     content: '';
-    display: block;
-    width: 8px;
+    display: inline-block;
+    min-width: 8px;
     height: 8px;
     border-radius: 100%;
     background-color: $active;

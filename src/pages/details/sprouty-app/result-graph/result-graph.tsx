@@ -7,17 +7,18 @@ import { GraphLG } from './graphs/lg';
 import { GraphMD } from './graphs/md';
 import { GraphSM } from './graphs/sm';
 import { GraphFULL } from './graphs/full';
+import { EScreenSize } from '@data/hooks/useResize';
 
 export const ResultGraph: React.FC = () => {
-  const width = useResize();
+  const screenSize = useResize();
 
   const renderGraph = () => {
-    switch (true) {
-      case width && width <= 1000:
+    switch (screenSize) {
+      case EScreenSize.LG:
         return <GraphLG />;
-      case width && width <= 700:
+      case EScreenSize.MD:
         return <GraphMD />;
-      case width && width <= 400:
+      case EScreenSize.SM:
         return <GraphSM />;
       default:
         return <GraphFULL />;
@@ -27,26 +28,28 @@ export const ResultGraph: React.FC = () => {
   return (
     <div className={styles.graph}>
       <div className={styles.graphImg}>
-        <svg width='100%' height='212' viewBox={`0 0 1065 212`}>
-          {renderGraph()}
-        </svg>
+        {renderGraph()}
 
         <div className={styles.dates}>
           <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
             Янв, 2022
           </Text>
-          <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
-            Апр, 2022
-          </Text>
+          {screenSize !== EScreenSize.SM && (
+            <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
+              Апр, 2022
+            </Text>
+          )}
           <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
             Авг, 2022
           </Text>
           <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
             Дек, 2022
           </Text>
-          <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
-            Фев, 2023
-          </Text>
+          {screenSize !== EScreenSize.SM && (
+            <Text size={ETextSize.SM} theme={ETextTheme.SECOND}>
+              Фев, 2023
+            </Text>
+          )}
         </div>
       </div>
       <div className={styles.graphInfo}>

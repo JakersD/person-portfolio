@@ -5,5 +5,5 @@ interface IProps {
 }
 
 export const FrameGap: React.FC<IProps> = ({ size }) => {
-  return <div style={{ marginBottom: `${size}px` }} />;
+  return <div style={{ display: 'flex', marginBottom: `${size}px` }} />;
 };

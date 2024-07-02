@@ -7,8 +7,12 @@ import { ETitleSize, Text, Title, Wrapper } from '@components/shared';
 import styles from './footer.module.scss';
 import { Link } from 'react-router-dom';
 import { ELinks } from '@data/config/links';
+import { useResize } from '@data/hooks';
+import { EScreenSize } from '@data/hooks/useResize';
 
 export const Footer: React.FC = () => {
+  const screenSize = useResize();
+
   return (
     <footer id='contacts'>
       <Wrapper className={styles.main}>
@@ -20,10 +24,13 @@ export const Footer: React.FC = () => {
             В данный момент активно ищу работу и открыта к новым предложениям
           </Title>
           <a className={styles.link} href={ELinks.MAIL}>
-            <Title className={styles.linkTitle} size={ETitleSize.H2}>
+            <Title
+              className={screenSize !== EScreenSize.SM ? styles.linkTitle : styles.linkTitleMobile}
+              size={ETitleSize.H2}
+            >
               kolyada.0504@gmail.com
             </Title>
-            <img src={NavigationIcon} alt='Ссылка на почту' />
+            {screenSize !== EScreenSize.SM && <img src={NavigationIcon} alt='Ссылка на почту' />}
           </a>
 
           <ul className={styles.list}>

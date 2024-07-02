@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../result-graph.module.scss';
 
 export const GraphFULL: React.FC = () => (
-  <>
+  <svg width='100%' height='212' viewBox={`0 0 1065 212`}>
     <path
       opacity='0.3'
       d='M548.353 122L300.477 169.5L67.0129 202L0 212H1065V0L990.781 7L776.052 34L548.353 122Z'
@@ -58,5 +58,5 @@ export const GraphFULL: React.FC = () => (
       </text>
       <circle cx='6' cy='6' r='6' fill='white' stroke='#6595FF' strokeWidth='4' />
     </g>
-  </>
+  </svg>
 );

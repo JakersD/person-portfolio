@@ -27,6 +27,11 @@
   margin-right: 12px;
 }
 
+.linkTitleMobile {
+  color: $white !important;
+  text-decoration: underline;
+}
+
 .link {
   display: inline-flex;
   align-items: flex-end;
@@ -75,5 +80,17 @@
 
   .link {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 330px) {
+  .title {
+    font-size: 20px;
+    word-wrap: break-word;
+  }
+
+  .linkTitleMobile {
+    font-size: 20px;
+    word-wrap: break-word;
   }
 }
