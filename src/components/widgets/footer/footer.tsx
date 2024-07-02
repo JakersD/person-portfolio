@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PortfolioPhoto from '@assets/portfolio-photo.jpg';
+import PortfolioPhoto from '@assets/portfolio-photo.webp';
 import NavigationIcon from '@assets/icons/navigation.svg';
 import { ETitleSize, Text, Title, Wrapper } from '@components/shared';
 

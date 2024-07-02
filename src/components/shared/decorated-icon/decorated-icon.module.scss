@@ -1,0 +1,16 @@
+@import '@/styles/vars.scss';
+
+.icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: $tagline-light;
+  border-radius: 12px;
+
+  img {
+    width: 24px;
+    height: 24px;
+    width: 100%;
+    height: 100%;
+  }
+}
