@@ -16,13 +16,13 @@ export const getProjectList = (): IProject[] => [
 export const getJobList = (): IItem[] => [
   {
     title: 'Роснавык',
-    subtitle: 'Junior Product Designer',
+    subtitle: 'Product Designer',
     text: 'Разрабатывала дизайн системы для поиска работы и проверки востребованности образования и навыков на бирже труда. Проектировала админ-панель и личный кабинет пользователя.',
     dates: ['2023', '2024'],
   },
   {
     title: 'LMS Data-Diving',
-    subtitle: 'Junior Product Designer',
+    subtitle: 'Product Designer',
     text: 'Занималась разработкой дизайна для систем онлайн обучения. Моей задачей было создать удобный и функциональный интерфейс для всех участников образовательного процесса: администраторов, преподавателей и учеников.',
     dates: ['2023'],
   },

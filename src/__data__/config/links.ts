@@ -1,5 +1,5 @@
 export enum ELinks {
-  CV = '/person-portfolio/CV_Ekaterina_Cherkasova.pdf',
+  CV = '/person-portfolio/CV_Cherkasov_Ekaterina.pdf',
   BEHANCE = 'https://www.behance.net/kolyada050e3a5',
   TELEGRAM = 'https://t.me/cherkasova_kolyada',
   WHATS_APP = 'https://wa.me/79153109996',
