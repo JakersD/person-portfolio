@@ -5,7 +5,7 @@ import NavigationIcon from '@assets/icons/navigation.svg';
 import { ETitleSize, Text, Title, Wrapper } from '@components/shared';
 
 import styles from './footer.module.scss';
-import { Link } from 'react-router-dom';
+
 import { ELinks } from '@data/config/links';
 import { useResize } from '@data/hooks';
 import { EScreenSize } from '@data/hooks/useResize';
@@ -35,24 +35,24 @@ export const Footer: React.FC = () => {
 
           <ul className={styles.list}>
             <li className={styles.item}>
-              <Link className={styles.itemLink} to={ELinks.CV} target='_blank'>
+              <a className={styles.itemLink} href={ELinks.CV} target='_blank'>
                 Download CV
-              </Link>
+              </a>
             </li>
             <li>
-              <Link className={styles.itemLink} to={ELinks.TELEGRAM} target='_blank'>
+              <a className={styles.itemLink} href={ELinks.TELEGRAM} target='_blank'>
                 Telegram
-              </Link>
+              </a>
             </li>
             <li>
-              <Link className={styles.itemLink} to={ELinks.WHATS_APP} target='_blank'>
+              <a className={styles.itemLink} href={ELinks.WHATS_APP} target='_blank'>
                 WhatsApp
-              </Link>
+              </a>
             </li>
             <li>
-              <Link className={styles.itemLink} to={ELinks.BEHANCE} target='_blank'>
+              <a className={styles.itemLink} href={ELinks.BEHANCE} target='_blank'>
                 Behance
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

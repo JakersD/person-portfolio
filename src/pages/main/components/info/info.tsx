@@ -10,11 +10,12 @@ export const InfoWidget: React.FC = () => {
       <div className={styles.wrapper}>
         <Title className={styles.title} size={ETitleSize.H1}>
           Екатерина Черкасова - продуктовый дизайнер
-          <span className={styles.nowrap}>из Москвы</span>
+          <span className={styles.nowrap}> из Москвы</span>
         </Title>
         <Text className={styles.text}>
-          Junior Product Designer. В свободное время работаю над личными проектами, постоянно повышаю
-          квалификацию. Моя цель - вносить вклад в создание инновационных и полезных продуктов.
+          Junior Product Designer. В свободное время работаю над личными проектами, постоянно
+          повышаю квалификацию. Моя цель - вносить вклад в создание инновационных и полезных
+          продуктов.
         </Text>
         <TagList />
       </div>

@@ -2,7 +2,7 @@
 
 .header {
   position: sticky;
-  top: 32px;
+  top: 0;
   width: 100%;
   margin-right: 0;
   margin-bottom: 24px;
@@ -26,26 +26,14 @@
 
 @include lg() {
   .header {
-    top: 16px;
+    top: 0;
     padding: 16px 24px;
   }
 }
 
 @include md() {
   .header {
-    top: 4px;
+    top: 0;
     margin-bottom: 16px;
   }
 }
-
-// @include sm() {
-//   .header {
-//     padding: 16px 24px;
-//     top: 10px;
-//     margin-bottom: 16px;
-//   }
-
-//   .modalLogoActive {
-//     margin-bottom: 16px;
-//   }
-// }

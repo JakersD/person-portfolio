@@ -13,6 +13,7 @@
 .date {
   color: $gray;
   min-width: 114px;
+  font-weight: 600;
   white-space: nowrap;
   margin-right: 45px;
 }
@@ -28,12 +29,6 @@
 .subtitle {
   margin-bottom: 12px;
 }
-
-// @media (max-width: 1326px) {
-//   .info {
-//     max-width: 562px;
-//   }
-// }
 
 @include lg {
   .info {

@@ -38,7 +38,7 @@ export const Nav: React.FC = () => {
       return navigate(`#${link}`);
     }
 
-    return navigate(`/person-portfolio/#${link}`);
+    return navigate(`/#${link}`);
   };
 
   return (

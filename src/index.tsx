@@ -8,18 +8,18 @@ import './styles/index.scss';
 import {
   Route,
   RouterProvider,
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
 import { MainPage } from '@pages/main/main';
 import { SproutyApp } from '@pages/details/sprouty-app/sprouty-app';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
-    <Route>
-      <Route path='/person-portfolio' element={<MainPage />} />
-      <Route path='/person-portfolio/projects/sprouty-app' element={<SproutyApp />} />
-    </Route>,
+    <>
+      <Route path='/' element={<MainPage />} />
+      <Route path='/projects/sprouty-app' element={<SproutyApp />} />
+    </>,
   ),
 );
 

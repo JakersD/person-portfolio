@@ -6,6 +6,7 @@
   "browserslist": [
     "defaults"
   ],
+  "homepage": "https://jakersd.github.io/person-portfolio",
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",

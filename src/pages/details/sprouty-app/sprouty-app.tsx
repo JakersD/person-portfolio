@@ -47,8 +47,6 @@ import { EScreenSize } from '@data/hooks/useResize';
 export const SproutyApp: React.FC = () => {
   const screen = useResize();
 
-  console.log(screen, screen === EScreenSize.FULL || screen === EScreenSize.LG);
-
   return (
     <PageWrapper>
       <div className={styles.wrapper}>

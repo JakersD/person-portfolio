@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styles from './tag.module.scss';
-import { Link } from 'react-router-dom';
 
 interface IProps {
   link: string;
@@ -13,7 +12,7 @@ interface IProps {
 export const Tag: React.FC<IProps> = ({ icon, children, link, isLink }) => {
   if (isLink) {
     return (
-      <a className={styles.tag} href={link}>
+      <a className={styles.tag} href={link} target='_blank'>
         <img className={styles.img} src={icon} alt='Иконка' />
         <p className={styles.text}>{children} </p>
       </a>
@@ -21,9 +20,9 @@ export const Tag: React.FC<IProps> = ({ icon, children, link, isLink }) => {
   }
 
   return (
-    <Link className={styles.tag} to={link} target='_blank'>
+    <a className={styles.tag} href={link} target='_blank'>
       <img className={styles.img} src={icon} alt='Иконка' />
       <p className={styles.text}>{children} </p>
-    </Link>
+    </a>
   );
 };

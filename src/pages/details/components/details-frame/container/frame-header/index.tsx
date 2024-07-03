@@ -21,7 +21,7 @@ export const FrameHeader: React.FC<IProps> = ({ title, links, subtitle }) => {
   const screenSize = useResize();
 
   const handleBack = () => {
-    navigate(-1);
+    navigate('/');
   };
 
   return (

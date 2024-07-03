@@ -13,7 +13,7 @@ interface IProps {
 export const Logo: React.FC<IProps> = ({ isModal = false, isShort = false }) => {
   const navigate = useNavigate();
 
-  const redictToMain = () => navigate('/person-portfolio');
+  const redictToMain = () => navigate('/');
 
   return (
     <div className={isShort ? styles.shortLogo : styles.logo} onClick={redictToMain}>
