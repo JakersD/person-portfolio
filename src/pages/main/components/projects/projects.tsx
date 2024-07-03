@@ -22,7 +22,12 @@ export const ProjectsWidget: React.FC = () => {
       </Title>
       <div className={styles.projectWrapper}>
         {getProjectList().map((v, i) => (
-          <ProjectCard key={getUniqueKey(v.id, i)} project={v} index={i} onClick={handleClickProject} />
+          <ProjectCard
+            key={getUniqueKey(v.id, i)}
+            project={v}
+            index={i}
+            onClick={handleClickProject}
+          />
         ))}
       </div>
     </Wrapper>

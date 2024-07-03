@@ -1,5 +1,5 @@
 export interface IItem {
-  dates: [string, string];
+  dates: [string, string] | [string];
   title: string;
   subtitle: string;
   text: string;

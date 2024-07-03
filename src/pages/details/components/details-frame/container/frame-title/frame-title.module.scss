@@ -1,3 +1,11 @@
+@import '@/styles/vars.scss';
+
 .title {
   margin-bottom: 12px;
+}
+
+@include md {
+  .frame_title {
+    font-size: 24px !important;
+  }
 }

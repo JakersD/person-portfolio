@@ -26,7 +26,10 @@ export const IconButton: React.FC<IProps> = ({ icon, className, skeletal, link, 
   }
 
   return (
-    <div className={combineStyles([skeletal ? styles.skeletalBtn : styles.btn, className])} onClick={onClick}>
+    <div
+      className={combineStyles([skeletal ? styles.skeletalBtn : styles.btn, className])}
+      onClick={onClick}
+    >
       <img src={icon} alt='Иконка' />
     </div>
   );

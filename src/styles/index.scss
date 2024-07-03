@@ -10,8 +10,14 @@ body {
   padding: 32px 40px;
 }
 
+@include md {
+  body {
+    padding: 32px 24px;
+  }
+}
+
 @include sm {
   body {
-    padding: 10px;
+    padding: 4px 8px;
   }
 }

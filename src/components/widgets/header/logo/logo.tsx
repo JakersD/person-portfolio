@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PortfolioPhoto from '@assets/portfolio-photo.jpg';
+import PortfolioPhoto from '@assets/portfolio-photo.webp';
 
 import styles from './logo.module.scss';
 import { useNavigate } from 'react-router-dom';
@@ -20,7 +20,11 @@ export const Logo: React.FC<IProps> = ({ isModal = false, isShort = false }) => 
       <img className={styles.img} src={PortfolioPhoto} alt='Фотография' />
       <div>
         <p className={styles.name}>Екатерина Черкасова</p>
-        <p className={isModal ? `${styles.job} ${styles.active}` : isShort ? styles.shortJob : styles.job}>
+        <p
+          className={
+            isModal ? `${styles.job} ${styles.active}` : isShort ? styles.shortJob : styles.job
+          }
+        >
           Product designer
         </p>
       </div>

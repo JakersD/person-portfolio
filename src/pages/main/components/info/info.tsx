@@ -9,7 +9,8 @@ export const InfoWidget: React.FC = () => {
     <Wrapper>
       <div className={styles.wrapper}>
         <Title className={styles.title} size={ETitleSize.H1}>
-          Екатерина Черкасова - продуктовый дизайнер <span className={styles.nowrap}>из Москвы</span>
+          Екатерина Черкасова - продуктовый дизайнер
+          <span className={styles.nowrap}>из Москвы</span>
         </Title>
         <Text className={styles.text}>
           Junior Product Designer. В свободное время работаю над личными проектами, постоянно повышаю

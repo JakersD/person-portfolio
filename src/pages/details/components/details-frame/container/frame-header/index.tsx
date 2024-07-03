@@ -4,6 +4,8 @@ import styles from './index.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { ETextTheme, ETitleSize, IconButton, Text, Title } from '@components/shared';
 import { getUniqueKey } from '@data/utils/core';
+import { useResize } from '@data/hooks';
+import { EScreenSize } from '@data/hooks/useResize';
 
 interface IProps {
   title: string;
@@ -16,6 +18,7 @@ interface IProps {
 
 export const FrameHeader: React.FC<IProps> = ({ title, links, subtitle }) => {
   const navigate = useNavigate();
+  const screenSize = useResize();
 
   const handleBack = () => {
     navigate(-1);
@@ -33,7 +36,7 @@ export const FrameHeader: React.FC<IProps> = ({ title, links, subtitle }) => {
           </Title>
           {subtitle && <Text theme={ETextTheme.SECOND}>{subtitle}</Text>}
         </div>
-        {Array.isArray(links) && links.length >= 1 && (
+        {screenSize !== EScreenSize.SM && Array.isArray(links) && links.length >= 1 && (
           <div className={styles.headerLinks}>
             {links.map((link, i) => (
               <IconButton

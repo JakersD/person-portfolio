@@ -9,4 +9,6 @@ export { TagList } from './buttons/tag-list/tag-list';
 export { Text } from './text/text';
 export { Title } from './text/title';
 
+export { DecoratedIcon } from './decorated-icon/decorated-icon';
+
 export * from './model';

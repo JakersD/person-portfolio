@@ -29,7 +29,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .headerLinks {
@@ -45,4 +45,7 @@
   &:last-child {
     margin: 0;
   }
+}
+
+@include lg() {
 }

@@ -1,10 +1,12 @@
 import React from 'react';
 
-import { InfoWidget } from './info/info';
-import { ProjectsWidget } from './projects/projects';
-import { ExperienceWidget } from './experience/experience';
-import { SkillsWidget } from './skills/skills';
-import { EducationWidget } from './education/education';
+import {
+  EducationWidget,
+  ExperienceWidget,
+  InfoWidget,
+  ProjectsWidget,
+  SkillsWidget,
+} from './components';
 
 import styles from './main.module.scss';
 import { Footer, Header } from '@components/widgets';

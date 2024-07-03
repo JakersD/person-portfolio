@@ -29,8 +29,8 @@
 }
 
 .dot4 {
-  right: 25.5%;
-  top: 2%;
+  left: 66.6%;
+  bottom: 74%;
 }
 
 .graphDot {
@@ -94,4 +94,16 @@
   font-weight: 600;
   line-height: 32px;
   color: $active;
+}
+
+.svg_text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+
+  &__bold {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+  }
 }

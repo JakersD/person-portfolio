@@ -1,3 +1,5 @@
+@import '@/styles/vars.scss';
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,4 +18,10 @@
   width: 32px;
   height: 32px;
   margin-bottom: 5px;
+}
+
+@include ultra_sm {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
