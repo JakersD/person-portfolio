@@ -1,7 +1,7 @@
 @import '@/styles/vars.scss';
 
 .modalWrapper {
-  background-color: rgba(11, 31, 51, 0.16);
+  background-color: rgba(11, 31, 51, 0.35);
   position: fixed;
   top: 0;
   left: 0;
@@ -19,8 +19,7 @@
 
 .wrapper {
   width: 98%;
-  height: 95%;
-  background-color: #fff;
+  border-radius: 18px;
   margin: 32px;
 }
 
@@ -42,4 +41,16 @@
   height: 100%;
   object-fit: scale-down;
   object-position: center;
+}
+
+@include md {
+  .wrapper {
+    margin: 12px;
+  }
+}
+
+@include sm {
+  .wrapper {
+    margin: 4px;
+  }
 }

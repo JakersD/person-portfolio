@@ -19,7 +19,7 @@ export const useResize = () => {
       if (window.innerWidth <= 630) {
         return setScreenSize(EScreenSize.SM);
       }
-      if (window.innerWidth <= 700) {
+      if (window.innerWidth <= 768) {
         return setScreenSize(EScreenSize.MD);
       }
       if (window.innerWidth <= 1196) {

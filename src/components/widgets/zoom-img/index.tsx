@@ -6,9 +6,10 @@ import maximizeIcon from '@assets/icons/maximize.svg';
 
 import styles from './index.module.scss';
 import { IconButton } from '@components/shared';
-import { useModal } from '@data/hooks';
+import { useModal, useResize } from '@data/hooks';
 import { Modal } from './modal';
 import { getUniqueKey } from '@data/utils/core';
+import { EScreenSize } from '@data/hooks/useResize';
 
 interface IProps {
   images: string[];
@@ -18,6 +19,7 @@ export const ZoomImg: React.FC<IProps> = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const [isOpen, toggleModal] = useModal();
+  const screenSize = useResize();
 
   return (
     <>
@@ -50,7 +52,13 @@ export const ZoomImg: React.FC<IProps> = ({ images }) => {
           </Swiper>
         )}
       </div>
-      <Modal isOpen={isOpen} toggleModal={toggleModal} images={images} activeIndex={activeIndex} />
+      <Modal
+        isOpen={isOpen}
+        toggleModal={toggleModal}
+        images={images}
+        activeIndex={activeIndex}
+        isMobile={screenSize !== EScreenSize.FULL && screenSize !== EScreenSize.LG}
+      />
     </>
   );
 };

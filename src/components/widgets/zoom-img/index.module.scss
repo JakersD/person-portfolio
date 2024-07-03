@@ -73,3 +73,9 @@
     height: 340px;
   }
 }
+
+@include sm {
+  .img {
+    height: 410px;
+  }
+}

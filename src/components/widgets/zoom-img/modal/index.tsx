@@ -14,12 +14,19 @@ interface IProps {
   isOpen: boolean;
   images: string[];
   activeIndex: number;
+  isMobile?: boolean;
   toggleModal: () => void;
 }
 
 const portal = document.getElementById('zoom-modal');
 
-export const Modal: React.FC<IProps> = ({ isOpen, toggleModal, images, activeIndex }) => {
+export const Modal: React.FC<IProps> = ({
+  isOpen,
+  toggleModal,
+  images,
+  isMobile = false,
+  activeIndex,
+}) => {
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : 'unset';
 
@@ -37,16 +44,15 @@ export const Modal: React.FC<IProps> = ({ isOpen, toggleModal, images, activeInd
   }, [isOpen]);
 
   const stopPropagation = (e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation();
-
   return ReactDOM.createPortal(
     <>
       {isOpen && (
         <div className={styles.modalWrapper} onClick={toggleModal}>
           <div className={styles.wrapper} onClick={stopPropagation}>
-            {images.length === 1 ? (
+            {images.length === 1 || isMobile ? (
               <div className={styles.gallery}>
                 <IconButton icon={closeIcon} className={styles.icon} onClick={toggleModal} />
-                <img className={styles.image} src={images[0]} alt='Картинка' />
+                <img className={styles.image} src={images[activeIndex]} alt='Картинка' />
               </div>
             ) : (
               <div className={styles.gallery}>
