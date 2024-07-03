@@ -18,11 +18,6 @@ const getTagList = () => [
     link: ELinks.CV,
   },
   {
-    text: 'Behance',
-    icon: behanceIcon,
-    link: ELinks.BEHANCE,
-  },
-  {
     text: 'Telegram',
     icon: telegramIcon,
     link: ELinks.TELEGRAM,
@@ -37,6 +32,11 @@ const getTagList = () => [
     icon: mailIcon,
     link: ELinks.MAIL,
     isLink: true,
+  },
+  {
+    text: 'Behance',
+    icon: behanceIcon,
+    link: ELinks.BEHANCE,
   },
 ];
 
