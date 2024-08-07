@@ -6,18 +6,18 @@ import lmsMainMini from '@assets/lms/main-mini.webp';
 
 export const getProjectList = (): IProject[] => [
   {
-    id: 'sprouty-app',
-    title: 'Скачки роста. Мобильное приложение',
-    dates: ['2021', '2022'],
-    imgSrc: sproutyMain,
-    role: 'Стажер UI/UX дизайнер',
-  },
-  {
     id: 'lms-data-diving',
     title: 'Образовательная платформа Data-Diving',
     dates: ['2023'],
     imgSrc: lmsMainMini,
     role: 'Product Designer',
+  },
+  {
+    id: 'sprouty-app',
+    title: 'Скачки роста. Мобильное приложение',
+    dates: ['2021', '2022'],
+    imgSrc: sproutyMain,
+    role: 'Стажер UI/UX дизайнер',
   },
 ];
 
