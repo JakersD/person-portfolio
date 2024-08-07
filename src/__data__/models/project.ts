@@ -3,5 +3,5 @@ export interface IProject {
   title: string;
   role: string;
   imgSrc: string;
-  dates: [string, string];
+  dates: [string, string] | [string];
 }

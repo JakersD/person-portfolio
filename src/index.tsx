@@ -13,12 +13,14 @@ import {
 } from 'react-router-dom';
 import { MainPage } from '@pages/main/main';
 import { SproutyApp } from '@pages/details/sprouty-app/sprouty-app';
+import { LmsDetails } from '@pages/details/lms/lms';
 
 const router = createHashRouter(
   createRoutesFromElements(
     <>
       <Route path='/' element={<MainPage />} />
       <Route path='/projects/sprouty-app' element={<SproutyApp />} />
+      <Route path='/projects/lms-data-diving' element={<LmsDetails />} />
     </>,
   ),
 );

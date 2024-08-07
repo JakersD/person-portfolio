@@ -16,7 +16,7 @@ export const ProjectList: React.FC = () => {
   const navigate = useNavigate();
 
   const handleClickProject = (id: string) => {
-    navigate(`/${id}`);
+    navigate(`/projects/${id}`);
   };
 
   const paginationConfig: PaginationOptions = {

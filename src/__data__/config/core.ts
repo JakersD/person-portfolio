@@ -2,6 +2,7 @@ import { IItem } from '@components/shared';
 import { IProject } from '@data/models/project';
 
 import sproutyMain from '@assets/sprouty-app/main1.webp';
+import lmsMainMini from '@assets/lms/main-mini.webp';
 
 export const getProjectList = (): IProject[] => [
   {
@@ -10,6 +11,13 @@ export const getProjectList = (): IProject[] => [
     dates: ['2021', '2022'],
     imgSrc: sproutyMain,
     role: 'Стажер UI/UX дизайнер',
+  },
+  {
+    id: 'lms-data-diving',
+    title: 'Образовательная платформа Data-Diving',
+    dates: ['2023'],
+    imgSrc: lmsMainMini,
+    role: 'Product Designer',
   },
 ];
 

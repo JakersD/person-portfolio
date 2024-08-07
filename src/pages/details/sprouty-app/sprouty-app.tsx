@@ -4,7 +4,7 @@ import { Footer } from '@components/widgets/footer/footer';
 import { ETitleSize, PageWrapper } from '@components/shared';
 
 import styles from './sprouty-app.module.scss';
-import { ShortHeaderWidget } from '@components/widgets';
+import { ProjectList, ShortHeaderWidget } from '@components/widgets';
 
 import appleSkeletal from '@assets/icons/apple-skeletal.svg';
 import googlePlaySkeletal from '@assets/icons/google-play-skeletal.svg';
@@ -28,9 +28,9 @@ import calendar2 from '@assets/sprouty-app/calendar2.webp';
 import tracker1 from '@assets/sprouty-app/tracker1.webp';
 import tracker2 from '@assets/sprouty-app/tracker2.webp';
 
-import lib1 from '@assets/sprouty-app/library1.webp';
+// import lib1 from '@assets/sprouty-app/library1.webp';
 
-import results1 from '@assets/sprouty-app/results1.webp';
+// import results1 from '@assets/sprouty-app/results1.webp';
 
 import { DetailsFrame } from '../components';
 import {
@@ -99,7 +99,7 @@ export const SproutyApp: React.FC = () => {
                 ]}
               />
             </DetailsFrame.Container>
-            <DetailsFrame.Container>
+            {/* <DetailsFrame.Container>
               <DetailsFrame.Container.Title>Моя роль и задачи</DetailsFrame.Container.Title>
               <DetailsFrame.Container.Text>
                 Я занималась доработкой существующего функционала приложения и добавлением новых
@@ -119,7 +119,7 @@ export const SproutyApp: React.FC = () => {
                   'Проведение коридорных исследований и тестирование макетов',
                 ]}
               />
-            </DetailsFrame.Container>
+            </DetailsFrame.Container> */}
           </DetailsFrame>
 
           {/* ПРОЦЕСС РАБОТЫ */}
@@ -155,7 +155,7 @@ export const SproutyApp: React.FC = () => {
                 определения удовлетворенности пользователей и выявления проблем в функционировании
                 приложения.
               </DetailsFrame.Container.Text>
-              <DetailsFrame.Container.Gap size={12} />
+              <DetailsFrame.Container.Gap size={24} />
               <DetailsFrame.Container.Gallery images={[process1, process2, process3, process4]} />
             </DetailsFrame.Container>
           </DetailsFrame>
@@ -220,33 +220,31 @@ export const SproutyApp: React.FC = () => {
             </DetailsFrame>
           )}
 
-          {/* ДОПОЛНЕНИЯ */}
+          {/* Главный экран */}
           <DetailsFrame>
             <DetailsFrame.Container>
-              <DetailsFrame.Container.Title>
-                Дополнения главного экрана
-              </DetailsFrame.Container.Title>
+              <DetailsFrame.Container.Title>Главный экран</DetailsFrame.Container.Title>
               <DetailsFrame.Container.Text>
-                После этапа исследований и обсуждения задач с командой, было решено доработать
-                функционал главного экрана приложения с информацией о развитии ребенка по неделям.
-                Нужно было добавить возможность просматривать игры и упражнения, подходящие по
-                возрасту, а также календарь с прогнозируемыми периодами кризисов. Главному экрану
-                также добавили небольшие измнения, добавив переключение по неделям. Чтобы улучшить
-                навигацию в приложении, я сделала tab-bar, куда перенесла настройки (в которые в
-                дальнейшем можно будет добавить информацию о подписке и обратную связь). Также
-                добавила в навигацию раздел с трекерами и библиотеку со статьями. Информацию на
-                главной странице я дополнила и разделила по тематике. Также добавила раздел с
-                навыками, которые осваивает ребенок. Их можно отмечать, указывать дату и получать
-                достижение, когда нывак был освоен.
+                После этапа исследований было решено доработать функционал главного экрана
+                приложения с информацией о развитии ребенка по неделям. Нужно было добавить
+                возможность просматривать игры и упражнения, а также календарь с прогнозируемыми
+                периодами кризисов. Чтобы улучшить навигацию в приложении, я сделала tab-bar, куда
+                перенесла настройки (в которые в дальнейшем можно будет добавить информацию о
+                подписке и обратную связь). Информацию на главной странице я дополнила и разделила
+                по тематике. Затем добавила раздел с навыками, которые осваивает ребенок. Их можно
+                отмечать, указывать дату и получать достижение, когда нывак был освоен. Также на
+                главный экран был добавлен раздел с играми и упражнениями.
               </DetailsFrame.Container.Text>
             </DetailsFrame.Container>
             <DetailsFrame.Container>
-              <DetailsFrame.Container.Gallery images={[additional1, additional2, additional3]} />
+              <DetailsFrame.Container.Gallery
+                images={[additional1, additional2, additional3, games1, calendar1, calendar2]}
+              />
             </DetailsFrame.Container>
           </DetailsFrame>
 
           {/* ИГРЫ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Игры и упражнения
@@ -262,10 +260,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[games1]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* КАЛЕНДАРЬ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Календарь и добавление событий
@@ -287,7 +285,7 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[calendar1, calendar2]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* ТРЕКЕРЫ И СТАТИСТИКА */}
           <DetailsFrame>
@@ -310,13 +308,13 @@ export const SproutyApp: React.FC = () => {
               />
               <DetailsFrame.Container.Gap size={12} />
               <DetailsFrame.Container.Text>
-                Для начала я создала экран трекера кормления. На главном экране предоставила выбор
-                вида кормления и быструю кнопку для начала записи. В процессе время начала и
-                длительность выставляются автоматически. Также пользователь может ввести время
-                вручную. По окончании кормления пользователь может сохранить запись в истории.
+                Для начала я создала экран трекера кормления. Я учла возможность интеграции трекера
+                кормления с другими трекерами, такими как трекер сна, настроения, сцеживания и
+                подгузников. Всего было разработано пять различных трекеров, позволяющих родителям
+                быстро выбрать нужную категорию.
               </DetailsFrame.Container.Text>
             </DetailsFrame.Container>
-            <DetailsFrame.Container>
+            {/* <DetailsFrame.Container>
               <DetailsFrame.Container.Text>
                 На отдельном экране "История" пользователь может просматривать записи о прошедших
                 кормлениях, включая информацию о типе, времени и длительности. По нажатию на кнопку
@@ -330,14 +328,14 @@ export const SproutyApp: React.FC = () => {
                 полную картину состояния и режима дня ребенка. Всего было разработано пять различных
                 трекеров, позволяющих родителям быстро выбрать нужную категорию.
               </DetailsFrame.Container.Text>
-            </DetailsFrame.Container>
+            </DetailsFrame.Container> */}
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[tracker1, tracker2]} />
             </DetailsFrame.Container>
           </DetailsFrame>
 
           {/* БИБЛИОТЕКА */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Библиотека статей
@@ -356,10 +354,10 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[lib1]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* ИТОГИ */}
-          <DetailsFrame>
+          {/* <DetailsFrame>
             <DetailsFrame.Container>
               <DetailsFrame.Container.Title size={ETitleSize.H3}>
                 Итоги
@@ -374,7 +372,7 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Gallery images={[results1]} />
             </DetailsFrame.Container>
-          </DetailsFrame>
+          </DetailsFrame> */}
 
           {/* РЕЗУЛЬТАТЫ */}
           {screen === EScreenSize.FULL && (
@@ -383,6 +381,15 @@ export const SproutyApp: React.FC = () => {
                 <DetailsFrame.Container.Title size={ETitleSize.H3}>
                   Результаты
                 </DetailsFrame.Container.Title>
+                <DetailsFrame.Container.Text>
+                  В процессе работы я также создала несколько других страниц, таких как настройки,
+                  экраны покупки подписки, выставления рейтинга приложения. Переработала дизайн
+                  входа в приложение, сделав его более гибким, удобным, и предусмотрев возможные
+                  проблемы. Также я добавила онбординг, объясняющий новым пользователям особенности
+                  приложения.
+                </DetailsFrame.Container.Text>
+              </DetailsFrame.Container>
+              <DetailsFrame.Container>
                 <DetailsFrame.Container.Text>
                   В результате обновления приложения и добавления новых функций, за год количество
                   скачиваний увеличилось в пять раз. Так же удалось увеличить количество проданных
@@ -396,7 +403,7 @@ export const SproutyApp: React.FC = () => {
             </DetailsFrame>
           )}
 
-          {/* <ProjectList /> */}
+          <ProjectList />
 
           <Footer />
         </main>

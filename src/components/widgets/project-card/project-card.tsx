@@ -15,6 +15,14 @@ interface IProps {
   onClick: (id: string) => void;
 }
 
+const getDate = (dates: [string, string] | [string]): string => {
+  if (dates.length > 1) {
+    return `${dates[0]}-${dates[1]}`;
+  }
+
+  return String(dates[0]);
+};
+
 export const ProjectCard: React.FC<IProps> = ({ project, index, onClick }) => {
   const screenSize = useResize();
 
@@ -38,9 +46,7 @@ export const ProjectCard: React.FC<IProps> = ({ project, index, onClick }) => {
           <Text theme={ETextTheme.SECOND}>{`${project.dates[0]}-${project.dates[1]}`}</Text>
         </>
       ) : (
-        <Text
-          theme={ETextTheme.SECOND}
-        >{`${project.role} | ${project.dates[0]}-${project.dates[1]}`}</Text>
+        <Text theme={ETextTheme.SECOND}>{`${project.role} | ${getDate(project.dates)}`}</Text>
       )}
     </div>
   );
