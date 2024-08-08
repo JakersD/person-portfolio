@@ -2,14 +2,14 @@ import { IItem } from '@components/shared';
 import { IProject } from '@data/models/project';
 
 import sproutyMain from '@assets/sprouty-app/main1.webp';
-import lmsMainMini from '@assets/lms/main-mini.webp';
+import lmsMain from '@assets/lms/main-full2.webp';
 
 export const getProjectList = (): IProject[] => [
   {
     id: 'lms-data-diving',
     title: 'Образовательная платформа Data-Diving',
     dates: ['2023'],
-    imgSrc: lmsMainMini,
+    imgSrc: lmsMain,
     role: 'Product Designer',
   },
   {
@@ -25,7 +25,7 @@ export const getJobList = (): IItem[] => [
   {
     title: 'Роснавык',
     subtitle: 'Product Designer',
-    text: 'Разрабатывала дизайн системы для поиска работы и проверки востребованности образования и навыков на бирже труда. Проектировала админ-панель и личный кабинет пользователя.',
+    text: 'Разрабатывала дизайн системы для проверки востребованности образования и навыков на бирже труда. Проектировала админ-панель и личный кабинет пользователя.',
     dates: ['2023', '2024'],
   },
   {
@@ -36,8 +36,8 @@ export const getJobList = (): IItem[] => [
   },
   {
     title: 'Скачки роста. Мобильное приложение',
-    subtitle: 'Стажер UI/UX дизайнер',
-    text: 'Занималась доработкой существующего функционала приложения и добавлением новых функций. По ходу работы много общалась с владельцем продукта, вместе с которым проводили исследования с аудиторией и строили гипотезы.',
+    subtitle: 'UI/UX дизайнер',
+    text: 'Занималась доработкой существующего функционала приложения. По ходу работы много общалась с владельцем продукта, вместе с которым проводили исследования с аудиторией и строили гипотезы.',
     dates: ['2022', '2023'],
   },
 ];

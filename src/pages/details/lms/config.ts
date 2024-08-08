@@ -1,6 +1,6 @@
 import heartIcon from '@assets/icons/message-heart.svg';
 import componentsIcon from '@assets/icons/layout-grid-add.svg';
-import chartLineIcon from '@assets/icons/chart-line.svg';
+import trendUpIcon from '@assets/icons/trend-up.svg';
 
 export const hypothesisMultiList = [
   {
@@ -34,6 +34,6 @@ export const resultMultiList = [
   },
   {
     text: 'Мы  не  остановились  на  достигнутом  и  продолжили  работу  над  LMS-системой,  добавляя  новые  функции  и  улучшая  существующие',
-    url: chartLineIcon,
+    url: trendUpIcon,
   },
 ];
