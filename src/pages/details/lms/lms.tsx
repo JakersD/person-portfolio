@@ -8,7 +8,7 @@ import { DetailsFrame } from '../components';
 
 import globeSceletalIcon from '@assets/icons/globe-skeletal.svg';
 
-import mainImg from '@assets/lms/main-full2.webp';
+import mainImg from '@assets/lms/main-full.webp';
 import schemaImg from '@assets/lms/schema.webp';
 
 import interviewImg1 from '@assets/lms/interview1.webp';

@@ -1,8 +1,8 @@
 import { IItem } from '@components/shared';
 import { IProject } from '@data/models/project';
 
-import sproutyMain from '@assets/sprouty-app/main1.webp';
-import lmsMain from '@assets/lms/main-full2.webp';
+import sproutyMain from '@assets/sprouty-app/main-mainpage.webp';
+import lmsMain from '@assets/lms/main-mainpage.webp';
 
 export const getProjectList = (): IProject[] => [
   {
