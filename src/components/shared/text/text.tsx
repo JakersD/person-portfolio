@@ -6,7 +6,7 @@ import { combineStyles } from '@data/utils/core';
 import styles from './text.module.scss';
 
 interface IProps {
-  children: string;
+  children: React.ReactElement | string;
   className?: string;
   weight?: ETextWeight;
   size?: ETextSize;
@@ -36,6 +36,8 @@ export const Text: React.FC<IProps> = ({
   };
 
   return (
-    <p className={combineStyles([renderSize(), renderWeight(), renderTheme(), className])}>{children}</p>
+    <p className={combineStyles([renderSize(), renderWeight(), renderTheme(), className])}>
+      {children}
+    </p>
   );
 };

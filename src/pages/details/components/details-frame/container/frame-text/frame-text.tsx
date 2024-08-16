@@ -1,11 +1,10 @@
-import React from 'react';
+import { FrameTextLink } from './frame-text-link';
+import { FrameTextView } from './frame-text-view';
 
-import { Text } from '@components/shared/text/text';
-
-interface ITextProps {
-  children: string;
-}
-
-export const FrameText: React.FC<ITextProps> = ({ children }) => {
-  return <Text>{children}</Text>;
+type TDetailsFrameText = typeof FrameTextView & {
+  Link?: typeof FrameTextView;
 };
+
+export const FrameText = FrameTextView as TDetailsFrameText;
+
+FrameText.Link = FrameTextLink as any;

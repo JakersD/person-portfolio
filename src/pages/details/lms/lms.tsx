@@ -9,7 +9,9 @@ import { DetailsFrame } from '../components';
 import globeSceletalIcon from '@assets/icons/globe-skeletal.svg';
 
 import mainImg from '@assets/lms/main-full.webp';
-import schemaImg from '@assets/lms/schema.webp';
+
+import schemaImg1 from '@assets/lms/schema1.webp';
+import schemaImg2 from '@assets/lms/schema2.webp';
 
 import interviewImg1 from '@assets/lms/interview1.webp';
 import interviewImg2 from '@assets/lms/interview2.webp';
@@ -94,8 +96,32 @@ export const LmsDetails: React.FC = () => {
                 ]}
               />
             </DetailsFrame.Container>
+
             <DetailsFrame.Container>
-              <DetailsFrame.Container.Gallery images={[schemaImg]} />
+              <DetailsFrame.Container.Title>
+                Информационная архитектура и User FLow
+              </DetailsFrame.Container.Title>
+              <DetailsFrame.Container.Text>
+                Изучив техническое задание, я составила схему информационной архитектуры LMS,
+                выделив основные сущности (курсы, модули, разделы, группы) и визуально показала
+                взаимосвязь между разделами. Совместно с владельцем продукта мы построили схему
+                взаимодействия сущностей по CRUD. Затем я продумала, какие шаги должен совершить
+                админ для выполнения основных задач, например, для добавления курса или регистрации
+                нового пользователя. Эти шаги я визуализировала на user flow, чтобы увидеть, как
+                пользователи будут взаимодействовать с системой, и сделать её максимально удобной.{' '}
+                {/* @ts-ignore */}
+                <DetailsFrame.Container.Text.Link
+                  href={
+                    'https://www.figma.com/design/YlFKuKYbzqSVZr48ZLWlTX/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-LMS?node-id=0-1&t=p4A5BB87grGy3w96-1'
+                  }
+                >
+                  <>Подробнее про разработку информационной архитектуры можно посмотреть здесь.</>
+                </DetailsFrame.Container.Text.Link>
+              </DetailsFrame.Container.Text>
+            </DetailsFrame.Container>
+
+            <DetailsFrame.Container>
+              <DetailsFrame.Container.Gallery images={[schemaImg1, schemaImg2]} />
             </DetailsFrame.Container>
           </DetailsFrame>
 
