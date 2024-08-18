@@ -81,7 +81,7 @@ export const LmsDetails: React.FC = () => {
                 Процесс работы
               </DetailsFrame.Container.Title>
               <DetailsFrame.Container.Text>
-                В процесса работы над созданием админ-панели я:
+                В процессе работы над созданием админ-панели я:
               </DetailsFrame.Container.Text>
 
               <DetailsFrame.Container.Gap size={12} />
