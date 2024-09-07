@@ -4,6 +4,12 @@
   gap: 8px;
 }
 
+.tableRos {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr 1fr;
+  gap: 8px;
+}
+
 .tableBody {
   background-color: #f8f8f8;
 }

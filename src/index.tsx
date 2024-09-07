@@ -14,6 +14,7 @@ import {
 import { MainPage } from '@pages/main/main';
 import { SproutyApp } from '@pages/details/sprouty-app/sprouty-app';
 import { LmsDetails } from '@pages/details/lms/lms';
+import { RosDetails } from '@pages/details/ros/ros';
 
 const router = createHashRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createHashRouter(
       <Route path='/' element={<MainPage />} />
       <Route path='/projects/sprouty-app' element={<SproutyApp />} />
       <Route path='/projects/lms-data-diving' element={<LmsDetails />} />
+      <Route path='/projects/ros-skill' element={<RosDetails />} />
     </>,
   ),
 );

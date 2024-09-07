@@ -115,7 +115,7 @@ export const LmsDetails: React.FC = () => {
                     'https://www.figma.com/design/YlFKuKYbzqSVZr48ZLWlTX/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-LMS?node-id=0-1&t=p4A5BB87grGy3w96-1'
                   }
                 >
-                  <>Подробнее про разработку информационной архитектуры можно посмотреть здесь.</>
+                  Подробнее про разработку информационной архитектуры можно посмотреть здесь.
                 </DetailsFrame.Container.Text.Link>
               </DetailsFrame.Container.Text>
             </DetailsFrame.Container>

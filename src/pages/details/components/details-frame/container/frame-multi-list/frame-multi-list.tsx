@@ -9,6 +9,7 @@ import { ETextSize, ETextTheme, Text } from '@components/shared';
 interface IProp {
   tableData: Array<{
     url?: string;
+    title?: string;
     text: string;
   }>;
   isImg?: boolean;
@@ -19,6 +20,7 @@ export const FrameMultiList: React.FC<IProp> = ({ tableData, isImg }) => (
     {tableData.map((item, i) => (
       <ListInfoBlock key={getUniqueKey(item.text, i)}>
         {item.url && <img src={item.url} className={styles.img} alt='Тематическая иконка' />}
+        {item.title && <Text className={styles.title}>{item.title}</Text>}
 
         <Text size={ETextSize.SM} theme={ETextTheme.BLACK}>
           {item.text}

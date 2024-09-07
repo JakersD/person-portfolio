@@ -122,15 +122,16 @@ import { getUniqueKey } from '@data/utils/core';
 
 interface IProps {
   table: string[][];
-  mobileTable: {
+  isRos?: boolean;
+  mobileTable?: {
     leftSide: string[];
     rightSide: string[];
   };
 }
 
-export const FrameTable: React.FC<IProps> = ({ table }) => {
+export const FrameTable: React.FC<IProps> = ({ table, isRos }) => {
   return (
-    <div className={styles.table}>
+    <div className={isRos ? styles.tableRos : styles.table}>
       {table.map((row, i) => (
         <React.Fragment key={getUniqueKey(row[0], i)}>
           {row.map((item, j) => (

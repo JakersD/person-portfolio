@@ -3,8 +3,16 @@ import { IProject } from '@data/models/project';
 
 import sproutyMain from '@assets/sprouty-app/main-mainpage.webp';
 import lmsMain from '@assets/lms/main-mainpage.webp';
+import rosMain from '@assets/ros/main1.webp';
 
 export const getProjectList = (): IProject[] => [
+  {
+    id: 'ros-skill',
+    title: 'Сервис для анализа рынка труда РосНавык',
+    dates: ['2023', '2024'],
+    imgSrc: rosMain,
+    role: 'Product Designer',
+  },
   {
     id: 'lms-data-diving',
     title: 'Образовательная платформа Data-Diving',
