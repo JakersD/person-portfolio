@@ -2,7 +2,8 @@ export interface IItem {
   dates: [string, string] | [string];
   title: string;
   subtitle: string;
-  text: string;
+  text?: string;
+  list?: string[];
 }
 
 export enum ETextWeight {

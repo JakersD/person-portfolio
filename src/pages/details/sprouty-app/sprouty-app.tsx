@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Footer } from '@components/widgets/footer/footer';
 import { ETitleSize, PageWrapper } from '@components/shared';
@@ -43,10 +43,14 @@ import { ResultGraph } from './result-graph/result-graph';
 import { ELinks } from '@data/config/links';
 import { useResize } from '@data/hooks';
 import { EScreenSize } from '@data/hooks/useResize';
+import { hit } from '@data/utils/metrika';
 
 export const SproutyApp: React.FC = () => {
-  const screen = useResize();
+  useEffect(() => {
+    hit(window.location.pathname + window.location.hash);
+  }, []);
 
+  const screen = useResize();
   return (
     <PageWrapper>
       <div className={styles.wrapper}>
@@ -57,7 +61,7 @@ export const SproutyApp: React.FC = () => {
             <DetailsFrame.Container>
               <DetailsFrame.Container.Header
                 title='Скачки роста. Мобильное приложение'
-                subtitle='Стажер UI/UX дизайнер | 2021-2022'
+                subtitle='UI/UX дизайнер | 2022-2023'
                 links={[
                   {
                     icon: appleSkeletal,

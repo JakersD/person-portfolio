@@ -6,6 +6,7 @@ import { Button } from '@components/shared';
 import styles from './nav.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { ELinks } from '@data/config/links';
+import { goalContactMe } from '@data/utils/metrika';
 
 const getNavList = () => [
   {
@@ -52,7 +53,7 @@ export const Nav: React.FC = () => {
           </li>
         ))}
       </ul>
-      <Button className={styles.btn} arrowIcon href={ELinks.TELEGRAM}>
+      <Button className={styles.btn} onClick={goalContactMe} arrowIcon href={ELinks.TELEGRAM}>
         Связаться со мной
       </Button>
     </>

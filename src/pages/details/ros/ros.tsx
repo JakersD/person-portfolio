@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ETitleSize, PageWrapper } from '@components/shared';
 import { Footer, ProjectList, ShortHeaderWidget } from '@components/widgets';
 import { DetailsFrame } from '../components';
@@ -25,8 +25,13 @@ import adminDesignImg2 from '@assets/ros/adminDesign2.webp';
 import adminDesignImg3 from '@assets/ros/adminDesign3.webp';
 import adminDesignImg4 from '@assets/ros/adminDesign4.webp';
 import { interviewTableData, processMultiList, resultMultiList } from './config';
+import { hit } from '@data/utils/metrika';
 
 export const RosDetails: React.FC = () => {
+  useEffect(() => {
+    hit(window.location.pathname + window.location.hash);
+  }, []);
+
   return (
     <PageWrapper>
       <div className={styles.wrapper}>

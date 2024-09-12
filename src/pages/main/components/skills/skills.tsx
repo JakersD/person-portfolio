@@ -14,10 +14,13 @@ export const SkillsWidget: React.FC = () => {
           </Title>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <Text>Знание принципов дизайна</Text>
+              <Text>Проектирование интерфейсов</Text>
             </li>
             <li className={styles.item}>
-              <Text>Умение проводить UX исследования</Text>
+              <Text>UI дизайн</Text>
+            </li>
+            <li className={styles.item}>
+              <Text>UX исследования и CustDev</Text>
             </li>
             <li className={styles.item}>
               <Text>Понимание HTML, CSS, JS</Text>
@@ -26,7 +29,7 @@ export const SkillsWidget: React.FC = () => {
               <Text>Гайдлайны IOS и Material Design</Text>
             </li>
             <li className={styles.item}>
-              <Text>Умею работать с метриками</Text>
+              <Text>Работа с метриками</Text>
             </li>
           </ul>
         </div>
@@ -49,6 +52,9 @@ export const SkillsWidget: React.FC = () => {
             </li>
             <li className={styles.item}>
               <Text>Обучаемость</Text>
+            </li>
+            <li className={styles.item}>
+              <Text>Генерация идей</Text>
             </li>
           </ul>
         </div>

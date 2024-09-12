@@ -12,6 +12,7 @@ interface IProps {
   className?: string;
   theme?: EBtnTheme;
   arrowIcon?: boolean;
+  onClick?: () => void;
 }
 
 export const Button: React.FC<IProps> = ({
@@ -19,6 +20,7 @@ export const Button: React.FC<IProps> = ({
   arrowIcon,
   className,
   href,
+  onClick,
   children,
 }) => {
   const getTheme = () => {
@@ -30,7 +32,12 @@ export const Button: React.FC<IProps> = ({
   };
 
   return (
-    <Link to={href} target='_blank' className={combineStyles([getTheme(), className])}>
+    <Link
+      to={href}
+      target='_blank'
+      onClick={onClick}
+      className={combineStyles([getTheme(), className])}
+    >
       {children}
     </Link>
   );

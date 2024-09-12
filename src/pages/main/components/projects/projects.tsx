@@ -7,11 +7,24 @@ import { ETitleSize, Title, Wrapper } from '@components/shared';
 import { ProjectCard } from '@components/widgets';
 
 import styles from './projects.module.scss';
+import { goalLMSCase, goalRosSkill, goalSproutyApp } from '@data/utils/metrika';
 
 export const ProjectsWidget: React.FC = () => {
   const navigate = useNavigate();
 
   const handleClickProject = (id: string) => {
+    switch (id) {
+      case 'ros-skill':
+        goalRosSkill();
+        break;
+      case 'lms-data-diving':
+        goalLMSCase();
+        break;
+      case 'sprouty-app':
+        goalSproutyApp();
+        break;
+    }
+
     navigate(`projects/${id}`);
   };
 

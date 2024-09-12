@@ -9,3 +9,5 @@ export { ProjectCard } from './project-card/project-card';
 export { ProjectList } from './project-list/projects-list';
 
 export { ZoomImg } from './zoom-img';
+
+export { YandexMetricaContainer } from './ya-metrica';

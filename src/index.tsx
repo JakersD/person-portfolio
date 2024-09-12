@@ -15,6 +15,7 @@ import { MainPage } from '@pages/main/main';
 import { SproutyApp } from '@pages/details/sprouty-app/sprouty-app';
 import { LmsDetails } from '@pages/details/lms/lms';
 import { RosDetails } from '@pages/details/ros/ros';
+import { YandexMetricaContainer } from '@components/widgets';
 
 const router = createHashRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createHashRouter(
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <YandexMetricaContainer />
     <RouterProvider router={router} />
   </React.StrictMode>,
 );

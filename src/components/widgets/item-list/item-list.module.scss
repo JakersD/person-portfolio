@@ -19,6 +19,7 @@
 }
 
 .info {
+  width: 100%;
   max-width: 682px;
 }
 
@@ -28,6 +29,28 @@
 
 .subtitle {
   margin-bottom: 12px;
+}
+
+.listItem {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    min-width: 8px;
+    height: 8px;
+    min-height: 8px;
+    border-radius: 100%;
+    background-color: $active;
+    margin-right: 8px;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @include lg {

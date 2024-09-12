@@ -17,6 +17,7 @@
     "react": "^19.0.0-rc-6230622a1a-20240610",
     "react-dom": "^19.0.0-rc-6230622a1a-20240610",
     "react-router-dom": "^6.23.1",
+    "react-yandex-metrika": "^2.6.0",
     "swiper": "^11.1.4"
   },
   "devDependencies": {

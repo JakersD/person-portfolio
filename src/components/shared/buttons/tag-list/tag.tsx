@@ -7,12 +7,13 @@ interface IProps {
   icon: string;
   children: string;
   isLink?: boolean;
+  onClick: () => void;
 }
 
-export const Tag: React.FC<IProps> = ({ icon, children, link, isLink }) => {
+export const Tag: React.FC<IProps> = ({ icon, children, link, isLink, onClick }) => {
   if (isLink) {
     return (
-      <a className={styles.tag} href={link} target='_blank'>
+      <a className={styles.tag} onClick={onClick} href={link} target='_blank'>
         <img className={styles.img} src={icon} alt='Иконка' />
         <p className={styles.text}>{children} </p>
       </a>
@@ -20,7 +21,7 @@ export const Tag: React.FC<IProps> = ({ icon, children, link, isLink }) => {
   }
 
   return (
-    <a className={styles.tag} href={link} target='_blank'>
+    <a className={styles.tag} onClick={onClick} href={link} target='_blank'>
       <img className={styles.img} src={icon} alt='Иконка' />
       <p className={styles.text}>{children} </p>
     </a>

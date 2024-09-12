@@ -1,5 +1,5 @@
 import { ETitleSize, PageWrapper } from '@components/shared';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { hypothesisMultiList, resultMultiList } from './config';
 
 import styles from './lms.module.scss';
@@ -25,8 +25,13 @@ import resultDesignImg2 from '@assets/lms/result-design2.webp';
 import resultDesignImg3 from '@assets/lms/result-design3.webp';
 import resultDesignImg4 from '@assets/lms/result-design4.webp';
 import resultDesignImg5 from '@assets/lms/result-design5.webp';
+import { hit } from '@data/utils/metrika';
 
 export const LmsDetails: React.FC = () => {
+  useEffect(() => {
+    hit(window.location.pathname + window.location.hash);
+  }, []);
+
   return (
     <PageWrapper>
       <div className={styles.wrapper}>

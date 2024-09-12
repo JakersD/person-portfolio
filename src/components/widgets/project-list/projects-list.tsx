@@ -1,3 +1,4 @@
+import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -8,6 +9,7 @@ import { getProjectsExcludeId, getQueryFromUrl, getUniqueKey } from '@data/utils
 import { getProjectList } from '@data/config/core';
 import { SwiperButtons } from './swiper-buttons';
 import { ProjectCard } from '../project-card/project-card';
+import { goalLMSCase, goalRosSkill, goalSproutyApp } from '@data/utils/metrika';
 
 import styles from './project-list.module.scss';
 
@@ -16,6 +18,18 @@ export const ProjectList: React.FC = () => {
   const navigate = useNavigate();
 
   const handleClickProject = (id: string) => {
+    switch (id) {
+      case 'ros-skill':
+        goalRosSkill();
+        break;
+      case 'lms-data-diving':
+        goalLMSCase();
+        break;
+      case 'sprouty-app':
+        goalSproutyApp();
+        break;
+    }
+
     navigate(`/projects/${id}`);
   };
 

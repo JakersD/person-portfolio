@@ -9,6 +9,7 @@ import styles from './footer.module.scss';
 import { ELinks } from '@data/config/links';
 import { useResize } from '@data/hooks';
 import { EScreenSize } from '@data/hooks/useResize';
+import { goalDownloadCV, goalGoBehance, goalGoTelegram, goalGoWhatsApp } from '@data/utils/metrika';
 
 export const Footer: React.FC = () => {
   const screenSize = useResize();
@@ -35,22 +36,42 @@ export const Footer: React.FC = () => {
 
           <ul className={styles.list}>
             <li className={styles.item}>
-              <a className={styles.itemLink} href={ELinks.CV} target='_blank'>
-                Download CV
+              <a
+                className={styles.itemLink}
+                onClick={goalDownloadCV}
+                href={ELinks.CV}
+                target='_blank'
+              >
+                Скачать CV
               </a>
             </li>
             <li>
-              <a className={styles.itemLink} href={ELinks.TELEGRAM} target='_blank'>
+              <a
+                className={styles.itemLink}
+                onClick={goalGoTelegram}
+                href={ELinks.TELEGRAM}
+                target='_blank'
+              >
                 Telegram
               </a>
             </li>
             <li>
-              <a className={styles.itemLink} href={ELinks.WHATS_APP} target='_blank'>
+              <a
+                className={styles.itemLink}
+                onClick={goalGoWhatsApp}
+                href={ELinks.WHATS_APP}
+                target='_blank'
+              >
                 WhatsApp
               </a>
             </li>
             <li>
-              <a className={styles.itemLink} href={ELinks.BEHANCE} target='_blank'>
+              <a
+                className={styles.itemLink}
+                onClick={goalGoBehance}
+                href={ELinks.BEHANCE}
+                target='_blank'
+              >
                 Behance
               </a>
             </li>

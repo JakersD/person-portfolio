@@ -22,7 +22,16 @@ export const ItemList: React.FC<IProps> = ({ items }) => {
         <Text className={styles.subtitle} theme={ETextTheme.SECOND}>
           {item.subtitle}
         </Text>
-        <Text className={styles.text}>{item.text}</Text>
+        {item.text && <Text className={styles.text}>{item.text}</Text>}
+        {item.list && (
+          <ul className={styles.list}>
+            {item.list.map((text) => (
+              <li className={styles.listItem}>
+                <Text>{text}</Text>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   ));
